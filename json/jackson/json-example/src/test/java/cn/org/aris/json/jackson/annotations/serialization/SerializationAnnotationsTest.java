@@ -14,6 +14,7 @@ import static org.hamcrest.core.StringContains.containsString;
 
 import org.hamcrest.core.Is;
 
+import cn.org.aris.json.jackson.JacksonExampleTest;
 import cn.org.aris.json.jackson.annotations.serialization.Event;
 
 import java.util.Date;
@@ -33,7 +34,7 @@ import com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter;
 import com.fasterxml.jackson.databind.ser.impl.SimpleFilterProvider;
 
 @SuppressWarnings("unused")
-public class SerializationAnnotationsTest {
+public class SerializationAnnotationsTest extends JacksonExampleTest {
 	
 	/**
 	 * Testing '@JsonAnyGetter'

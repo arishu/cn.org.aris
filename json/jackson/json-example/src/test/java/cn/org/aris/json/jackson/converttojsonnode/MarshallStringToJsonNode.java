@@ -15,20 +15,11 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.sun.org.apache.xpath.internal.operations.Equals;
+import cn.org.aris.json.jackson.JacksonExampleTest;
 
-import cn.org.aris.java.log.LogConfig;
-
-public class MarshallStringToJsonNode {
+public class MarshallStringToJsonNode extends JacksonExampleTest {
 	
-	private static final Logger logger;
-	private static final String resources;
-	
-	static {
-		resources = MarshallStringToJsonNode.class.getClassLoader().getResource("").getFile().toString();
-		LogConfig.setLogPath(resources + "json/jackson/json-example/");
-		logger = LoggerFactory.getLogger(MarshallStringToJsonNode.class);
-	}
+	private static final Logger logger = LoggerFactory.getLogger(MarshallStringToJsonNode.class);
 	
 	/**
 	 * Simply use ObjectMapper.readTree method to convert
