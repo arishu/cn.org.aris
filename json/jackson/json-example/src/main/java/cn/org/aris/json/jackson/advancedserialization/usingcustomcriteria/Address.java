@@ -14,6 +14,12 @@ public class Address implements Hidable{
 		this.country = country;
 	}
 	
+	public Address(String city, String country, boolean hidden) {
+		this.city = city;
+		this.country = country;
+		this.hidden = hidden;
+	}
+	
 	public String getCity() {
 		return city;
 	}

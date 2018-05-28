@@ -14,6 +14,12 @@ public class Person implements Hidable {
 		this.address = address;
 	}
 	
+	public Person(String name, Address address, boolean hidden) {
+		this.name = name;
+		this.address = address;
+		this.hidden = hidden;
+	}
+	
 	public String getName() {
 		return name;
 	}
