@@ -119,8 +119,6 @@ namespace CSharpConstructsPartOne.StringData
 
             string greeting3 = $"Hello {name.ToUpper()}, you are {age} years old.";
             Console.WriteLine("Greeting Message using string interpolation: \n\t{0}", greeting3);
-        }
-
-
+        }    
     }
 }
