@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CSharpConstructsPartOne.DataTypesNarrowingAndWidening
+namespace CSharpConstructsPartOne.ImplicitlyTypedLocalVariable
 {
-    abstract class ADataTypesNarrowingAndWidening : IConsoleExecObject
+    abstract class AImplicitlyTypedLocalVariableExecObject : IConsoleExecObject
     {
         public abstract void Exec();
     }

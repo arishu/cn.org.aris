@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CSharpConstructsPartOne.DataTypesNarrowingAndWidening
 {
-    class DataTypesNarrowingAndWideningExec : ADataTypesNarrowingAndWidening
+    class DataTypesNarrowingAndWideningExec : ADataTypesNarrowingAndWideningExecObject
     {
         public override void Exec()
         {
