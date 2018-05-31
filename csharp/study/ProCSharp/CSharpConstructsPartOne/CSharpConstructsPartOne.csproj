@@ -45,18 +45,23 @@
   <ItemGroup>
     <Compile Include="DataTypesNarrowingAndWidening\ADataTypesNarrowingAndWideningExecObject.cs" />
     <Compile Include="DataTypesNarrowingAndWidening\DataTypesNarrowingAndWideningExec.cs" />
+    <Compile Include="DicisionConstructsAndRelationalEqualityOperators\ADicisionConstructsAndRelationalEqualityOperatorsExecObject.cs" />
+    <Compile Include="DicisionConstructsAndRelationalEqualityOperators\DicisionConstructsAndRelationalEqualityOperatorsExec.cs" />
     <Compile Include="IConsoleExecObject.cs" />
     <Compile Include="ImplicitlyTypedLocalVariable\AImplicitlyTypedLocalVariableExecObject.cs" />
     <Compile Include="ImplicitlyTypedLocalVariable\ImplicitlyTypedLocalVariableExec.cs" />
+    <Compile Include="IterationConstructs\AIterationConstructsExecObject.cs" />
+    <Compile Include="IterationConstructs\IterationConstructsExec.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringData\AStringDataExecObject.cs" />
     <Compile Include="StringData\StringDataExec.cs" />
+    <Compile Include="UnderstandingcSharpArrays\AUnderstandingcSharpArraysExecObject.cs" />
+    <Compile Include="UnderstandingcSharpArrays\UnderstandingcSharpArraysExec.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Console\" />
     <Folder Include="DataTypesAndKeywords\" />
-    <Folder Include="NewFolder2\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
