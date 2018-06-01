@@ -4,7 +4,7 @@ using System.Linq;
 /// <summary>
 /// 
 /// </summary>
-namespace CSharpConstructsPartOne.IterationConstructs
+namespace CoreCSharpPrograming.IterationConstructs
 {
     class IterationConstructsExec : AIterationConstructsExecObject
     {

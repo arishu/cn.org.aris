@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using CSharpConstructsPartOne.StringData;
+using CoreCSharpPrograming.StringData;
 
-namespace CSharpConstructsPartOne
+namespace CoreCSharpPrograming
 {
     class Program
     {

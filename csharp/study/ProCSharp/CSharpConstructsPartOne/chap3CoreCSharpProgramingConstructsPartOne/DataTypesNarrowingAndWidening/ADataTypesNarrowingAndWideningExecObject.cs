@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CSharpConstructsPartOne.IterationConstructs
+namespace CoreCSharpPrograming.DataTypesNarrowingAndWidening
 {
-    abstract class AIterationConstructsExecObject : IConsoleExecObject
+    abstract class ADataTypesNarrowingAndWideningExecObject : IConsoleExecObject
     {
         public abstract void Exec();
     }

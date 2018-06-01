@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CSharpConstructsPartOne.DicisionConstructsAndRelationalEqualityOperators
+namespace CoreCSharpPrograming.DicisionConstructsAndRelationalEqualityOperators
 {
     class DicisionConstructsAndRelationalEqualityOperatorsExec : ADicisionConstructsAndRelationalEqualityOperatorsExecObject
     {

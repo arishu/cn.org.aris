@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CSharpConstructsPartOne.StringData
+namespace CoreCSharpPrograming.StringData
 {
     abstract class AStringDataExecObject : IConsoleExecObject
     {

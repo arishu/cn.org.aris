@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CSharpConstructsPartOne.UnderstandingcSharpArrays
+namespace CoreCSharpPrograming.chap4PartTwo.UnderstandingcSharpArrays
 {
     abstract class AUnderstandingcSharpArraysExecObject : IConsoleExecObject
     {
