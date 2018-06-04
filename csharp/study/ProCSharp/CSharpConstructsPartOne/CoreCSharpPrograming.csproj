@@ -31,7 +31,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CSharpConstructsPartOne.Program</StartupObject>
+    <StartupObject>CoreCSharpPrograming.chap4PartTwo.test.ClassAndStruct</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -43,27 +43,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="chap3CoreCSharpProgramingConstructsPartOne\DataTypesNarrowingAndWidening\ADataTypesNarrowingAndWideningExecObject.cs" />
-    <Compile Include="chap3CoreCSharpProgramingConstructsPartOne\DataTypesNarrowingAndWidening\DataTypesNarrowingAndWideningExec.cs" />
-    <Compile Include="chap3CoreCSharpProgramingConstructsPartOne\DicisionConstructsAndRelationalEqualityOperators\ADicisionConstructsAndRelationalEqualityOperatorsExecObject.cs" />
-    <Compile Include="chap3CoreCSharpProgramingConstructsPartOne\DicisionConstructsAndRelationalEqualityOperators\DicisionConstructsAndRelationalEqualityOperatorsExec.cs" />
+    <Compile Include="chap3PartOne\DataTypesNarrowingAndWidening\ADataTypesNarrowingAndWideningExecObject.cs" />
+    <Compile Include="chap3PartOne\DataTypesNarrowingAndWidening\DataTypesNarrowingAndWideningExec.cs" />
+    <Compile Include="chap3PartOne\DicisionConstructsAndRelationalEqualityOperators\ADicisionConstructsAndRelationalEqualityOperatorsExecObject.cs" />
+    <Compile Include="chap3PartOne\DicisionConstructsAndRelationalEqualityOperators\DicisionConstructsAndRelationalEqualityOperatorsExec.cs" />
     <Compile Include="chap4PartTwo\MethodsAndParamterModifiers\AMethodsAndParamterModifiersExecObject.cs" />
     <Compile Include="chap4PartTwo\MethodsAndParamterModifiers\MethodsAndParamterModifiersExec.cs" />
+    <Compile Include="chap4PartTwo\test\ClassAndStruct.cs" />
     <Compile Include="IConsoleExecObject.cs" />
-    <Compile Include="chap3CoreCSharpProgramingConstructsPartOne\ImplicitlyTypedLocalVariable\AImplicitlyTypedLocalVariableExecObject.cs" />
-    <Compile Include="chap3CoreCSharpProgramingConstructsPartOne\ImplicitlyTypedLocalVariable\ImplicitlyTypedLocalVariableExec.cs" />
-    <Compile Include="chap3CoreCSharpProgramingConstructsPartOne\IterationConstructs\AIterationConstructsExecObject.cs" />
-    <Compile Include="chap3CoreCSharpProgramingConstructsPartOne\IterationConstructs\IterationConstructsExec.cs" />
+    <Compile Include="chap3PartOne\ImplicitlyTypedLocalVariable\AImplicitlyTypedLocalVariableExecObject.cs" />
+    <Compile Include="chap3PartOne\ImplicitlyTypedLocalVariable\ImplicitlyTypedLocalVariableExec.cs" />
+    <Compile Include="chap3PartOne\IterationConstructs\AIterationConstructsExecObject.cs" />
+    <Compile Include="chap3PartOne\IterationConstructs\IterationConstructsExec.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="chap3CoreCSharpProgramingConstructsPartOne\StringData\AStringDataExecObject.cs" />
-    <Compile Include="chap3CoreCSharpProgramingConstructsPartOne\StringData\StringDataExec.cs" />
+    <Compile Include="chap3PartOne\StringData\AStringDataExecObject.cs" />
+    <Compile Include="chap3PartOne\StringData\StringDataExec.cs" />
     <Compile Include="chap4PartTwo\UnderstandingcSharpArrays\AUnderstandingcSharpArraysExecObject.cs" />
     <Compile Include="chap4PartTwo\UnderstandingcSharpArrays\UnderstandingcSharpArraysExec.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="chap3CoreCSharpProgramingConstructsPartOne\Console\" />
-    <Folder Include="chap3CoreCSharpProgramingConstructsPartOne\DataTypesAndKeywords\" />
+    <Folder Include="chap3PartOne\Console\" />
+    <Folder Include="chap3PartOne\DataTypesAndKeywords\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
