@@ -50,6 +50,10 @@
     <Compile Include="chap4PartTwo\MethodsAndParamterModifiers\AMethodsAndParamterModifiersExecObject.cs" />
     <Compile Include="chap4PartTwo\MethodsAndParamterModifiers\MethodsAndParamterModifiersExec.cs" />
     <Compile Include="chap4PartTwo\test\ClassAndStruct.cs" />
+    <Compile Include="chap5\AChap5ExecObject.cs" />
+    <Compile Include="chap5\thiskeywordusage\MotorcycleWithOptionalArgumentsConstructor.cs" />
+    <Compile Include="chap5\thiskeywordusage\MotorcycleWithChaingConstructorCalling.cs" />
+    <Compile Include="chap5\thiskeywordusage\ThisKeywordUsage.cs" />
     <Compile Include="IConsoleExecObject.cs" />
     <Compile Include="chap3PartOne\ImplicitlyTypedLocalVariable\AImplicitlyTypedLocalVariableExecObject.cs" />
     <Compile Include="chap3PartOne\ImplicitlyTypedLocalVariable\ImplicitlyTypedLocalVariableExec.cs" />
@@ -65,6 +69,9 @@
   <ItemGroup>
     <Folder Include="chap3PartOne\Console\" />
     <Folder Include="chap3PartOne\DataTypesAndKeywords\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="chap5\statickeywordusage\Readme.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
