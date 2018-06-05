@@ -9,8 +9,8 @@
 	Because you can expose some static methods of that class and you can directly interact with these things.
 	因为你可以暴露出这个类的某些静态方法，你可以直接与这些方法进行交互。
 	
-	Key things is there is no state being managed within a static class.
-	It is effectively stateless.It just provides you with a sries of behaviours.
+	Key things is that there is no state being managed within a static class.
+	It is effectively stateless.It just provides you with a series of behaviours.
 	关键的一点是静态类中没有需要管理的状态。它是没有状态的，它仅仅给你提供了一系列行为。
 
 - Almost like a library of interactions and activities that it can do without the cost of instantiation

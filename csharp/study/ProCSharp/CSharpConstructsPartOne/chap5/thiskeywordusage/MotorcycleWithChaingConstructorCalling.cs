@@ -10,8 +10,29 @@ namespace CoreCSharpPrograming.chap5.thiskeywordusage
         private int _driverIntensity;
         private string _driverName;
 
-        public int DriverIntensity { get; set; }
-        public string DriverName { get; set; }
+        public int DriverIntensity
+        {
+            get
+            {
+                return _driverIntensity;
+            }
+
+            set
+            {
+                _driverIntensity = value;
+            }
+        }
+        public string DriverName
+        {
+            get
+            {
+                return _driverName;
+            }
+            set
+            {
+                _driverName = value;
+            }
+        }
 
         /// <summary>
         /// The default no-args constructor

@@ -31,7 +31,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CoreCSharpPrograming.chap4PartTwo.test.ClassAndStruct</StartupObject>
+    <StartupObject>CoreCSharpPrograming.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -51,6 +51,16 @@
     <Compile Include="chap4PartTwo\MethodsAndParamterModifiers\MethodsAndParamterModifiersExec.cs" />
     <Compile Include="chap4PartTwo\test\ClassAndStruct.cs" />
     <Compile Include="chap5\AChap5ExecObject.cs" />
+    <Compile Include="chap5\CSharpEncapsulation\Account.cs" />
+    <Compile Include="chap5\CSharpEncapsulation\Car.cs" />
+    <Compile Include="chap5\CSharpEncapsulation\CSharpEncapsulationServices.cs" />
+    <Compile Include="chap5\CSharpEncapsulation\Employee.cs" />
+    <Compile Include="chap5\CSharpEncapsulation\Garage.cs" />
+    <Compile Include="chap5\CSharpEncapsulation\SavingsAccount.cs" />
+    <Compile Include="chap5\statickeywordusage\SavingsAccount.cs" />
+    <Compile Include="chap5\statickeywordusage\StaticKeywordUsage.cs" />
+    <Compile Include="chap5\statickeywordusage\TimeUtilClassWithStaticImport.cs" />
+    <Compile Include="chap5\statickeywordusage\TimeUtilClass.cs" />
     <Compile Include="chap5\thiskeywordusage\MotorcycleWithOptionalArgumentsConstructor.cs" />
     <Compile Include="chap5\thiskeywordusage\MotorcycleWithChaingConstructorCalling.cs" />
     <Compile Include="chap5\thiskeywordusage\ThisKeywordUsage.cs" />
