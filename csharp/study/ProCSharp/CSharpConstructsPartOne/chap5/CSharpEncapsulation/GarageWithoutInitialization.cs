@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CoreCSharpPrograming.chap5.CSharpEncapsulation
 {
-    class Garage
+    class GarageWithoutInitialization
     {
         // The hidden int backing field is set to zero
         public int NumberOfCars { get; set; }

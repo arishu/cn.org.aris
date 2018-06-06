@@ -18,10 +18,6 @@ namespace CoreCSharpPrograming.chap5.CSharpEncapsulation
                 ReadOnlyWriteOnlyProperties();
 
                 StaticPropertiesUsage();
-
-                AutomaticPropertiesUsage();
-
-                AutoPropertiesAndDefaultValues();
             }
             catch (Exception e)
             {
@@ -104,35 +100,6 @@ namespace CoreCSharpPrograming.chap5.CSharpEncapsulation
             Console.WriteLine();
         }
 
-        /// <summary>
-        /// Automatic Properties Usage
-        /// </summary>
-        private void AutomaticPropertiesUsage()
-        {
-            Console.WriteLine("=> Automatic Properties Usage: ");
-
-            Account account = new Account(1_0000_0000D, "Aris");
-
-            Console.WriteLine("Account Details: {0}", account.Details);
-
-            Console.WriteLine();
-        }
-
-        /// <summary>
-        /// Automatic Properties and Default Values
-        /// </summary>
-        private void AutoPropertiesAndDefaultValues()
-        {
-            Console.WriteLine("=> Automatic Properties and Default Values: ");
-
-            Garage g = new Garage();
-
-            Console.WriteLine("Numbers of Cars: {0}", g.NumberOfCars);
-
-            Console.WriteLine("Car's name is: {0}", g.MyAuto.PetName);
-
-            Console.WriteLine();
-        }
     }
 
 }

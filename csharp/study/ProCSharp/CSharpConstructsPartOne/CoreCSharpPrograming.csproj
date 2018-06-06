@@ -52,10 +52,19 @@
     <Compile Include="chap4PartTwo\test\ClassAndStruct.cs" />
     <Compile Include="chap5\AChap5ExecObject.cs" />
     <Compile Include="chap5\CSharpEncapsulation\Account.cs" />
+    <Compile Include="chap5\CSharpEncapsulation\AutoPropertiesUsage.cs" />
     <Compile Include="chap5\CSharpEncapsulation\Car.cs" />
+    <Compile Include="chap5\CSharpEncapsulation\ConstantFieldData.cs" />
+    <Compile Include="chap5\CSharpEncapsulation\PointColor.cs" />
     <Compile Include="chap5\CSharpEncapsulation\CSharpEncapsulationServices.cs" />
     <Compile Include="chap5\CSharpEncapsulation\Employee.cs" />
-    <Compile Include="chap5\CSharpEncapsulation\Garage.cs" />
+    <Compile Include="chap5\CSharpEncapsulation\GarageInitializedWhenDeclared.cs" />
+    <Compile Include="chap5\CSharpEncapsulation\GarageInitializedInConstructor.cs" />
+    <Compile Include="chap5\CSharpEncapsulation\GarageWithoutInitialization.cs" />
+    <Compile Include="chap5\CSharpEncapsulation\ObjectInitialization.cs" />
+    <Compile Include="chap5\CSharpEncapsulation\PointForInitializationSyntax.cs" />
+    <Compile Include="chap5\CSharpEncapsulation\Point.cs" />
+    <Compile Include="chap5\CSharpEncapsulation\Rectangle.cs" />
     <Compile Include="chap5\CSharpEncapsulation\SavingsAccount.cs" />
     <Compile Include="chap5\statickeywordusage\SavingsAccount.cs" />
     <Compile Include="chap5\statickeywordusage\StaticKeywordUsage.cs" />
@@ -64,6 +73,14 @@
     <Compile Include="chap5\thiskeywordusage\MotorcycleWithOptionalArgumentsConstructor.cs" />
     <Compile Include="chap5\thiskeywordusage\MotorcycleWithChaingConstructorCalling.cs" />
     <Compile Include="chap5\thiskeywordusage\ThisKeywordUsage.cs" />
+    <Compile Include="chap6\AChap6ExecObject.cs" />
+    <Compile Include="chap6\basicinheritance\BasicInheritanceExec.cs" />
+    <Compile Include="chap6\basicinheritance\Car.cs" />
+    <Compile Include="chap6\basicinheritance\MiniVan.cs" />
+    <Compile Include="chap6\inheritancedetails\Employee.cs" />
+    <Compile Include="chap6\inheritancedetails\InheritanceDetailsExec.cs" />
+    <Compile Include="chap6\inheritancedetails\Manager.cs" />
+    <Compile Include="chap6\inheritancedetails\SalesPerson.cs" />
     <Compile Include="IConsoleExecObject.cs" />
     <Compile Include="chap3PartOne\ImplicitlyTypedLocalVariable\AImplicitlyTypedLocalVariableExecObject.cs" />
     <Compile Include="chap3PartOne\ImplicitlyTypedLocalVariable\ImplicitlyTypedLocalVariableExec.cs" />
@@ -82,6 +99,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="chap5\statickeywordusage\Readme.md" />
+    <Compile Include="chap6\inheritancedetails\Employee.Core.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
