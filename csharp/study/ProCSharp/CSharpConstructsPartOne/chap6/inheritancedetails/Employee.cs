@@ -5,8 +5,25 @@ using System.Text;
 
 namespace CoreCSharpPrograming.chap6.inheritancedetails
 {
-    partial class Employee
+    /// <summary>
+    /// Business Employee class 
+    /// where properties and methods are defined
+    /// </summary>
+    abstract partial class Employee
     {
+        public class BenefitPackage
+        {
+            public enum BenefitPackageLevel
+            {
+                Standard, Gold, Platinum
+            }
+
+            public double ComputePayDecution()
+            {
+                return 125.0;
+            }
+        }
+
         // Properties
         public string Name
         {
@@ -49,6 +66,12 @@ namespace CoreCSharpPrograming.chap6.inheritancedetails
             set => empdesc = value;
         }
 
+        public BenefitPackage Benefits
+        {
+            get => empBenefits;
+            set => empBenefits = value;
+        }
+
 
         // Accessor (get methods)
         public string GetName()
@@ -79,12 +102,17 @@ namespace CoreCSharpPrograming.chap6.inheritancedetails
 
         // Methods
 
-        public void GiveBonus(float amount)
+        public virtual void GiveBonus(float amount)
         {
             Pay += amount;
         }
 
-        public void DisplayStatus()
+        public double GetBenefitCost()
+        {
+            return empBenefits.ComputePayDecution();
+        }
+
+        public virtual void DisplayStatus()
         {
             Console.WriteLine("Name: {0}", Name);
             Console.WriteLine("Age: {0}", Age);

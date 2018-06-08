@@ -5,15 +5,20 @@ using System.Text;
 
 namespace CoreCSharpPrograming.chap6.inheritancedetails
 {
-    partial class Employee
+    /// <summary>
+    /// Core Employee Class 
+    /// where field data and constructors are defined
+    /// </summary>
+    abstract partial class Employee
     {
 		// Field Data
-        private string empName;
-        private int empAge;
-        private int empID;
-        private float currPay;
-        private string empSSN;
-        private string empdesc;
+        protected string empName;
+        protected int empAge;
+        protected int empID;
+        protected float currPay;
+        protected string empSSN;
+        protected string empdesc;
+        protected BenefitPackage empBenefits = new BenefitPackage();
 
         // Constructors
         public Employee() { }
