@@ -5,10 +5,11 @@ using System.Text;
 
 namespace CoreCSharpPrograming.chap6.inheritancedetails
 {
-    public class Manager : Employee
+    class Manager : Employee
     {
         public int StockOptions { get; set; }
 
+        public Manager() {}
 
         public Manager(string fullName, int age, int empID,
             float currPay, string ssn, int numbOfOpts)
