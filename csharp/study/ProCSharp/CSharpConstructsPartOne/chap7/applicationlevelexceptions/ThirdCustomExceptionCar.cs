@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CoreCSharpPrograming.chap7.simplestexample
+namespace CoreCSharpPrograming.chap7.applicationlevelexceptions
 {
-    class Car
+    class ThirdCustomExceptionCar
     {
         public const int MaxSpeed = 100;
 
@@ -14,11 +14,11 @@ namespace CoreCSharpPrograming.chap7.simplestexample
 
         private bool carIsDead;
 
-        private Radio theMusicBox = new Radio();
+        private RadioWithSThirdCustomException theMusicBox = new RadioWithSThirdCustomException();
 
-        public Car() {}
+        public ThirdCustomExceptionCar() {}
 
-        public Car(string name, int speed)
+        public ThirdCustomExceptionCar(string name, int speed)
         {
             CurrentSpeed = speed;
             PetName = name;
@@ -43,12 +43,12 @@ namespace CoreCSharpPrograming.chap7.simplestexample
                     carIsDead = true;
 
                     // Create a new local variable before throwing the Exception Object
-                    Exception ex = new Exception($"{PetName} has overheated!");
+                    CarIsDeadThirdException ex = new CarIsDeadThirdException($"{PetName} has overheated!")
+                    {
+                        ErrorTimeStamp = DateTime.Now,
+                        CauseOfError = "You have a lead foot"
+                    };
                     ex.HelpLink = "http://www.baidu.com";
-
-                    // Stuff in custom data regarding the error
-                    ex.Data.Add("TimeStamp", $"The car exploded at {DateTime.Now}");
-                    ex.Data.Add("Cause", "You have a lead foot");
 
                     throw ex;
                 }
@@ -60,7 +60,7 @@ namespace CoreCSharpPrograming.chap7.simplestexample
         }
     }
 
-    internal class Radio
+    internal class RadioWithSThirdCustomException
     {
         public void TurnOn(bool on)
         {

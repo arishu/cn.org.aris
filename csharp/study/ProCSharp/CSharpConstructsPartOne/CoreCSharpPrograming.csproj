@@ -92,7 +92,17 @@
     <Compile Include="chap6\polymorphic\ShapeWithInterface.cs" />
     <Compile Include="chap6\polymorphic\Shape.cs" />
     <Compile Include="chap6\polymorphic\ThreeDCircleWithMemberShadowing.cs" />
+    <Compile Include="chap7\applicationlevelexceptions\ApplicationLevelExceptionExec.cs" />
+    <Compile Include="chap7\applicationlevelexceptions\CarIsDeadThirdException.cs" />
+    <Compile Include="chap7\applicationlevelexceptions\CarIsDeadSecondException.cs" />
+    <Compile Include="chap7\applicationlevelexceptions\ThirdCustomExceptionCar.cs" />
+    <Compile Include="chap7\applicationlevelexceptions\SecondCustomExceptionCar.cs" />
+    <Compile Include="chap7\applicationlevelexceptions\CustomExceptionCar.cs" />
+    <Compile Include="chap7\applicationlevelexceptions\CarIsDeadException.cs" />
     <Compile Include="chap7\configexceptionstate\ConfigExceptionStateExec.cs" />
+    <Compile Include="chap7\multiexceptionhandling\MultiExceptionCar.cs" />
+    <Compile Include="chap7\multiexceptionhandling\MultiExceptionHandlingExec.cs" />
+    <Compile Include="chap7\multiexceptionhandling\SerializedCarIsDeadException.cs" />
     <Compile Include="chap7\simplestexample\Car.cs" />
     <Compile Include="chap7\simplestexample\SimplestExampleExec.cs" />
     <Compile Include="IConsoleExecObject.cs" />

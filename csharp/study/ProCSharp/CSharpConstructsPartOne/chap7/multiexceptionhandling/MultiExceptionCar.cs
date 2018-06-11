@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CoreCSharpPrograming.chap7.simplestexample
+namespace CoreCSharpPrograming.chap7.multiexceptionhandling
 {
-    class Car
+    class MultiExceptionCar
     {
         public const int MaxSpeed = 100;
 
@@ -14,11 +14,11 @@ namespace CoreCSharpPrograming.chap7.simplestexample
 
         private bool carIsDead;
 
-        private Radio theMusicBox = new Radio();
+        private MultiExceptionRadio theMusicBox = new MultiExceptionRadio();
 
-        public Car() {}
+        public MultiExceptionCar() {}
 
-        public Car(string name, int speed)
+        public MultiExceptionCar(string name, int speed)
         {
             CurrentSpeed = speed;
             PetName = name;
@@ -31,7 +31,9 @@ namespace CoreCSharpPrograming.chap7.simplestexample
 
         public void Accelerate(int delta)
         {
-            if (carIsDead)
+            if (delta < 0)
+                throw new ArgumentOutOfRangeException("delta", "Speed must be greater than zero!");
+            else if (carIsDead)
                 Console.WriteLine("{0} is out of order...", PetName);
             else
             {
@@ -43,12 +45,9 @@ namespace CoreCSharpPrograming.chap7.simplestexample
                     carIsDead = true;
 
                     // Create a new local variable before throwing the Exception Object
-                    Exception ex = new Exception($"{PetName} has overheated!");
+                    SerializedCarIsDeadException ex = new SerializedCarIsDeadException($"{PetName} has overheated!",
+                        "You have a lead foot", DateTime.Now);
                     ex.HelpLink = "http://www.baidu.com";
-
-                    // Stuff in custom data regarding the error
-                    ex.Data.Add("TimeStamp", $"The car exploded at {DateTime.Now}");
-                    ex.Data.Add("Cause", "You have a lead foot");
 
                     throw ex;
                 }
@@ -60,7 +59,7 @@ namespace CoreCSharpPrograming.chap7.simplestexample
         }
     }
 
-    internal class Radio
+    internal class MultiExceptionRadio
     {
         public void TurnOn(bool on)
         {
