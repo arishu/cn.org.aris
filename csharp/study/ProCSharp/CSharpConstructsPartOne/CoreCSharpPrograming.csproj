@@ -43,13 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="chap3PartOne\DataTypesNarrowingAndWidening\ADataTypesNarrowingAndWideningExecObject.cs" />
-    <Compile Include="chap3PartOne\DataTypesNarrowingAndWidening\DataTypesNarrowingAndWideningExec.cs" />
-    <Compile Include="chap3PartOne\DicisionConstructsAndRelationalEqualityOperators\ADicisionConstructsAndRelationalEqualityOperatorsExecObject.cs" />
-    <Compile Include="chap3PartOne\DicisionConstructsAndRelationalEqualityOperators\DicisionConstructsAndRelationalEqualityOperatorsExec.cs" />
-    <Compile Include="chap4PartTwo\MethodsAndParamterModifiers\AMethodsAndParamterModifiersExecObject.cs" />
-    <Compile Include="chap4PartTwo\MethodsAndParamterModifiers\MethodsAndParamterModifiersExec.cs" />
-    <Compile Include="chap4PartTwo\test\ClassAndStruct.cs" />
+    <Compile Include="chap3\AChap3ExecObject.cs" />
+    <Compile Include="chap3\DataTypesNarrowingAndWidening\DataTypesNarrowingAndWideningExec.cs" />
+    <Compile Include="chap3\DicisionConstructsAndRelationalEqualityOperators\DicisionConstructsAndRelationalEqualityOperatorsExec.cs" />
+    <Compile Include="chap4\AChap4ExecObject.cs" />
+    <Compile Include="chap4\MethodsAndParamterModifiers\MethodsAndParamterModifiersExec.cs" />
+    <Compile Include="chap4\test\ClassAndStruct.cs" />
     <Compile Include="chap5\AChap5ExecObject.cs" />
     <Compile Include="chap5\CSharpEncapsulation\Account.cs" />
     <Compile Include="chap5\CSharpEncapsulation\AutoPropertiesUsage.cs" />
@@ -105,22 +104,19 @@
     <Compile Include="chap7\multiexceptionhandling\SerializedCarIsDeadException.cs" />
     <Compile Include="chap7\simplestexample\Car.cs" />
     <Compile Include="chap7\simplestexample\SimplestExampleExec.cs" />
+    <Compile Include="chap7\unhandledexceptiondebugging\UnhandledExceptionDebuggingExec.cs" />
     <Compile Include="IConsoleExecObject.cs" />
-    <Compile Include="chap3PartOne\ImplicitlyTypedLocalVariable\AImplicitlyTypedLocalVariableExecObject.cs" />
-    <Compile Include="chap3PartOne\ImplicitlyTypedLocalVariable\ImplicitlyTypedLocalVariableExec.cs" />
-    <Compile Include="chap3PartOne\IterationConstructs\AIterationConstructsExecObject.cs" />
-    <Compile Include="chap3PartOne\IterationConstructs\IterationConstructsExec.cs" />
+    <Compile Include="chap3\ImplicitlyTypedLocalVariable\ImplicitlyTypedLocalVariableExec.cs" />
+    <Compile Include="chap3\IterationConstructs\IterationConstructsExec.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="chap3PartOne\StringData\AStringDataExecObject.cs" />
-    <Compile Include="chap3PartOne\StringData\StringDataExec.cs" />
-    <Compile Include="chap4PartTwo\UnderstandingcSharpArrays\AUnderstandingcSharpArraysExecObject.cs" />
-    <Compile Include="chap4PartTwo\UnderstandingcSharpArrays\UnderstandingcSharpArraysExec.cs" />
+    <Compile Include="chap3\StringData\StringDataExec.cs" />
+    <Compile Include="chap4\UnderstandingcSharpArrays\UnderstandingcSharpArraysExec.cs" />
     <Compile Include="chap7\AChapt7ExecObject.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="chap3PartOne\Console\" />
-    <Folder Include="chap3PartOne\DataTypesAndKeywords\" />
+    <Folder Include="chap3\Console\" />
+    <Folder Include="chap3\DataTypesAndKeywords\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="chap5\statickeywordusage\Readme.md" />

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CoreCSharpPrograming.StringData
+namespace CoreCSharpPrograming.chap3.StringData
 {
-    class StringDataExec : AStringDataExecObject
+    class StringDataExec : AChap3ExecObject
     {
         public override void Exec()
         {

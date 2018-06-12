@@ -3,13 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CoreCSharpPrograming.DicisionConstructsAndRelationalEqualityOperators
+namespace CoreCSharpPrograming.chap3.DicisionConstructsAndRelationalEqualityOperators
 {
-    class DicisionConstructsAndRelationalEqualityOperatorsExec : ADicisionConstructsAndRelationalEqualityOperatorsExecObject
+    class DicisionConstructsAndRelationalEqualityOperatorsExec : AChap3ExecObject
     {
         public override void Exec()
         {
-            
+            try
+            {
+                ExecutePatternMatchingSwitch();
+
+                ExecutePatternMatchingSwitchWithWhen();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Exception occurs in DicisionConstructsAndRelationalEqualityOperatorsExec.cs: {0}\n{1}",
+                    e.Message, e.StackTrace);
+            }
 
         }
 

@@ -3,13 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CoreCSharpPrograming.chap4PartTwo.UnderstandingcSharpArrays
+namespace CoreCSharpPrograming.chap4.UnderstandingcSharpArrays
 {
-    class UnderstandingcSharpArraysExec : AUnderstandingcSharpArraysExecObject
+    class UnderstandingcSharpArraysExec : AChap4ExecObject
     {
         public override void Exec()
         {
-            
+            try
+            {
+                DeclareImplicitArrays();
+
+                ArrayOfObjects();
+
+                RectMultidimensionalArray();
+
+                JaggedMultidimensionalArray();
+
+                PassAndReceiveArrays();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Exception occurs in UnderstandingcSharpArraysExec.cs: {0}\n{1}",
+                    e.Message, e.StackTrace);
+            }
         }
 
         /// <summary>
@@ -127,7 +143,6 @@ namespace CoreCSharpPrograming.chap4PartTwo.UnderstandingcSharpArrays
 
             Console.WriteLine();
         }
-
 
     }
 }

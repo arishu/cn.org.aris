@@ -4,9 +4,9 @@ using System.Linq;
 /// <summary>
 /// 
 /// </summary>
-namespace CoreCSharpPrograming.IterationConstructs
+namespace CoreCSharpPrograming.chap3.IterationConstructs
 {
-    class IterationConstructsExec : AIterationConstructsExecObject
+    class IterationConstructsExec : AChap3ExecObject
     {
         public override void Exec()
         {

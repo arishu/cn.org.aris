@@ -9,9 +9,22 @@ namespace CoreCSharpPrograming.DataTypesNarrowingAndWidening
     {
         public override void Exec()
         {
-            DataTypeWidening();
+            try
+            {
+                DataTypeWidening();
 
-            DataTypenarrowing();
+                DataTypenarrowing();
+
+                CheckedKeywordUsage();
+
+                UnCheckedKeywordUsage();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Exception occurs in DataTypesNarrowingAndWideningExec.cs: {0}\n{1}",
+                    e.Message, e.StackTrace);
+            }
+            
         }
 
         /// <summary>

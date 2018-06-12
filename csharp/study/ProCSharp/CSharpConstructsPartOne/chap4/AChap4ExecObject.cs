@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CoreCSharpPrograming.DataTypesNarrowingAndWidening
+namespace CoreCSharpPrograming.chap4
 {
-    abstract class ADataTypesNarrowingAndWideningExecObject : IConsoleExecObject
+    abstract class AChap4ExecObject : IConsoleExecObject
     {
         public abstract void Exec();
     }

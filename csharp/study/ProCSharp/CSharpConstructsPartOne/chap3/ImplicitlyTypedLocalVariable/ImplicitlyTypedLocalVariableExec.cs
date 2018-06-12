@@ -3,19 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CoreCSharpPrograming.ImplicitlyTypedLocalVariable
+namespace CoreCSharpPrograming.chap3.ImplicitlyTypedLocalVariable
 {
-    class ImplicitlyTypedLocalVariableExec : AImplicitlyTypedLocalVariableExecObject
+    class ImplicitlyTypedLocalVariableExec : AChap3ExecObject
     {
         public override void Exec()
         {
-            ExplicitTypedLocalVariableDeclaration();
+            try
+            {
+                ExplicitTypedLocalVariableDeclaration();
 
-            ImplicitTypedLocalVariableDeclaration();
+                ImplicitTypedLocalVariableDeclaration();
 
-            DeclareImplicitVars();
-
-
+                DeclareImplicitVars();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Exception occurs in ImplicitlyTypedLocalVariableExec.cs: {0}\n{1}",
+                    e.Message, e.StackTrace);
+            }
         }
 
         /// <summary>

@@ -3,23 +3,31 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CoreCSharpPrograming.chap4PartTwo.MethodsAndParamterModifiers
+namespace CoreCSharpPrograming.chap4.MethodsAndParamterModifiers
 {
-    class MethodsAndParamterModifiersExec : AMethodsAndParamterModifiersExecObject
+    class MethodsAndParamterModifiersExec : AChap4ExecObject
     {
         public override void Exec()
         {
-            DefaultByValuePassing();
+            try
+            {
+                DefaultByValuePassing();
 
-            OutModifierUsage();
+                OutModifierUsage();
 
-            RefModifierUsage();
+                RefModifierUsage();
 
-            RefReturnUsage();
+                RefReturnUsage();
 
-            ParamsModifierUsage();
+                ParamsModifierUsage();
 
-            NamedAndOptionalArgumentsUsage();
+                NamedAndOptionalArgumentsUsage();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Exception occurs in MethodsAndParamterModifiersExec.cs: {0}\n{1}",
+                    e.Message, e.StackTrace);
+            }
         }
 
         private int Add(int x, int y)
