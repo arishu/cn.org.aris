@@ -124,6 +124,14 @@
     <Compile Include="chap8\interfaceimplementation\Shape.cs" />
     <Compile Include="chap8\interfaceimplementation\SwitchBlade.cs" />
     <Compile Include="chap8\interfaceimplementation\Triangle.cs" />
+    <Compile Include="chap8\interfaceinheritance\BitmapImage.cs" />
+    <Compile Include="chap8\interfaceinheritance\IAdvancedDraw.cs" />
+    <Compile Include="chap8\interfaceinheritance\IDrawable.cs" />
+    <Compile Include="chap8\interfaceinheritance\InterfaceInheritanceExec.cs" />
+    <Compile Include="chap8\interfaceinheritance\IPrintable.cs" />
+    <Compile Include="chap8\interfaceinheritance\IShape.cs" />
+    <Compile Include="chap8\interfaceinheritance\Rectangle.cs" />
+    <Compile Include="chap8\interfaceinheritance\Square.cs" />
     <Compile Include="chap8\invokeinterfacemembers\InvokeInterfaceMembersExec.cs" />
     <Compile Include="IConsoleExecObject.cs" />
     <Compile Include="chap3\ImplicitlyTypedLocalVariable\ImplicitlyTypedLocalVariableExec.cs" />
