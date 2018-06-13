@@ -113,6 +113,13 @@
     <Compile Include="chap8\explicitinterfaceimplementation\IDrawToPrinter.cs" />
     <Compile Include="chap8\explicitinterfaceimplementation\OctagonWithExplicitBinding.cs" />
     <Compile Include="chap8\explicitinterfaceimplementation\OctagonWithSingleImplementationMethod.cs" />
+    <Compile Include="chap8\ienumerableandienumerator\Car.cs" />
+    <Compile Include="chap8\ienumerableandienumerator\GarageForIteratorThird.cs" />
+    <Compile Include="chap8\ienumerableandienumerator\GarageForIteratorSecond.cs" />
+    <Compile Include="chap8\ienumerableandienumerator\GarageForIterator.cs" />
+    <Compile Include="chap8\ienumerableandienumerator\SecondGarage.cs" />
+    <Compile Include="chap8\ienumerableandienumerator\Garage.cs" />
+    <Compile Include="chap8\ienumerableandienumerator\IEnumerableAndIEnumeratorInterfaceUsage.cs" />
     <Compile Include="chap8\interfaceasparametersandreturnvalues\Hexagon.cs" />
     <Compile Include="chap8\interfaceasparametersandreturnvalues\IDraw3D.cs" />
     <Compile Include="chap8\interfaceasparametersandreturnvalues\InterfaceAsParametersAndReturnValuesExec.cs" />
