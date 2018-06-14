@@ -6,7 +6,7 @@ using System.Text;
 
 namespace CoreCSharpPrograming.chap8.ienumerableandienumerator
 {
-    class IEnumerableAndIEnumeratorInterfaceUsage : AChap8ExecObject
+    class IEnumerableAndIEnumeratorInterfaceUsageExec : AChap8ExecObject
     {
         public override void Exec()
         {
@@ -19,6 +19,8 @@ namespace CoreCSharpPrograming.chap8.ienumerableandienumerator
                 BuildIteratorMethodWithYieldKeyword();
 
                 LocalFunctionUsage();
+
+                // LocalFunctionWithException();
 
                 NamedIteratorUsage();
             }
@@ -87,11 +89,25 @@ namespace CoreCSharpPrograming.chap8.ienumerableandienumerator
         {
             Console.WriteLine("=> Local Function Usage: ");
 
-            GarageForIteratorSecond carLot = new GarageForIteratorSecond();
+            GarageForIteratorForLocalFunction carLot = new GarageForIteratorForLocalFunction();
+
             foreach (Car c in carLot)
             {
                 Console.WriteLine("{0} is going {1} MPH", c.PetName, c.CurrentSpeed);
             }
+
+            Console.WriteLine();
+        }
+
+        /// <summary>
+        /// Local Function With Exception
+        /// </summary>
+        private void LocalFunctionWithException()
+        {
+            Console.WriteLine("=> Local Function With Exception: ");
+
+            GarageForIteratorForLocalFunctionSecond carLot = new GarageForIteratorForLocalFunctionSecond();
+            IEnumerator carEnumerator = carLot.GetEnumerator();
 
             Console.WriteLine();
         }
@@ -103,8 +119,18 @@ namespace CoreCSharpPrograming.chap8.ienumerableandienumerator
         {
             Console.WriteLine("=> Named Iterator Usage: ");
 
-            GarageForIteratorThird carLot = new GarageForIteratorThird();
+            GarageForIteratorForNamedIterator carLot = new GarageForIteratorForNamedIterator();
+
+            // Get Items using GetEnumerator()
+            Console.WriteLine("-> Get Items using GetEnumerator()");
             foreach (Car c in carLot)
+            {
+                Console.WriteLine("{0} is going {1} MPH", c.PetName, c.CurrentSpeed);
+            }
+            Console.WriteLine();
+
+            Console.WriteLine("-> Get Items using custom GetTheCars()");
+            foreach(Car c in carLot.GetTheCars(true))
             {
                 Console.WriteLine("{0} is going {1} MPH", c.PetName, c.CurrentSpeed);
             }

@@ -5,6 +5,7 @@ using System.Text;
 using CoreCSharpPrograming.chap3.StringData;
 using CoreCSharpPrograming.chap5.CSharpEncapsulation;
 using CoreCSharpPrograming.chap7.unhandledexceptiondebugging;
+using CoreCSharpPrograming.chap8.ienumerableandienumerator;
 
 namespace CoreCSharpPrograming
 {
@@ -13,10 +14,12 @@ namespace CoreCSharpPrograming
         static void Main(string[] args)
         {
             // Chap3Exec();
-            
+
             // Chap5Exec();
 
-            Chap7Exec();
+            // Chap7Exec();
+
+            Chap8Exec();
         }
 
         private static void Chap3Exec()
@@ -33,6 +36,11 @@ namespace CoreCSharpPrograming
         private static void Chap7Exec()
         {
             new UnhandledExceptionDebuggingExec().Exec();
+        }
+
+        private static void Chap8Exec()
+        {
+            new IEnumerableAndIEnumeratorInterfaceUsageExec().Exec();
         }
     }
 }

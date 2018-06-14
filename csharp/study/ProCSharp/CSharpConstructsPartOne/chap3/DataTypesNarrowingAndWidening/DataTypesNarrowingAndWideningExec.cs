@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CoreCSharpPrograming.DataTypesNarrowingAndWidening
+namespace CoreCSharpPrograming.chap3.DataTypesNarrowingAndWidening
 {
-    class DataTypesNarrowingAndWideningExec : ADataTypesNarrowingAndWideningExecObject
+    class DataTypesNarrowingAndWideningExec : AChap3ExecObject
     {
         public override void Exec()
         {

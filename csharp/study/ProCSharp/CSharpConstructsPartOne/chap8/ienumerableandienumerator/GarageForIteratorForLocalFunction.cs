@@ -6,11 +6,11 @@ using System.Text;
 
 namespace CoreCSharpPrograming.chap8.ienumerableandienumerator
 {
-    public class GarageForIteratorSecond : IEnumerable
+    public class GarageForIteratorForLocalFunction : IEnumerable
     {
         private Car[] carArray = new Car[4];
 
-        public GarageForIteratorSecond()
+        public GarageForIteratorForLocalFunction()
         {
             carArray[0] = new Car("FeeFee", 200);
             carArray[1] = new Car("Clunker", 90);
@@ -21,7 +21,6 @@ namespace CoreCSharpPrograming.chap8.ienumerableandienumerator
         // Iterator method
         public IEnumerator GetEnumerator()
         {
-            // throw new Exception("This won't get called");
             return actualImplementation();
 
             IEnumerator actualImplementation()

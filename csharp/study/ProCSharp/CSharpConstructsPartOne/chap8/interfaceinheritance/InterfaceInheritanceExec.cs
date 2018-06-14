@@ -11,11 +11,12 @@ namespace CoreCSharpPrograming.chap8.interfaceinheritance
         {
             try
             {
-
+                SimpleInterfaceInheritance();
             }
             catch (Exception e)
             {
-                Console.WriteLine();
+                Console.WriteLine("Exception occurs in InterfaceInheritanceExec.cs: {0}\n{1}",
+                    e.Message, e.StackTrace);
             }
         }
 
