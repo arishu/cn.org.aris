@@ -5,13 +5,13 @@ using System.Text;
 
 namespace CoreCSharpPrograming.chap8.icloneableinterface
 {
-    public class ClonablePoint : ICloneable
+    public class CloneablePoint : ICloneable
     {
         public int X { get; set; }
         public int Y { get; set; }
 
-        public ClonablePoint() { }
-        public ClonablePoint(int xPos, int yPos)
+        public CloneablePoint() { }
+        public CloneablePoint(int xPos, int yPos)
         {
             X = xPos;
             Y = yPos;

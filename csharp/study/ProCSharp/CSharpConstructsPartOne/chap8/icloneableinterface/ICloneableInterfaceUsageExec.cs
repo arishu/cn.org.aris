@@ -14,6 +14,8 @@ namespace CoreCSharpPrograming.chap8.icloneableinterface
                 ReferenceToSameObject();
 
                 ObjectCloneUsage();
+
+                ElaborateCloneableObjectUsage();
             }
             catch (Exception e)
             {
@@ -46,15 +48,38 @@ namespace CoreCSharpPrograming.chap8.icloneableinterface
         {
             Console.WriteLine("=> Object Clone Usage: ");
 
-            ClonablePoint p3 = new ClonablePoint(100, 100);
+            CloneablePoint p3 = new CloneablePoint(100, 100);
             Console.WriteLine(p3);
 
-            ClonablePoint p4 = (ClonablePoint)p3.Clone();
+            CloneablePoint p4 = (CloneablePoint)p3.Clone();
             Console.WriteLine(p4);
 
             p4.X = 0;
             Console.WriteLine($"p3.X = {p3.X}");
             Console.WriteLine($"p4.X = {p3.X}");
+
+            Console.WriteLine();
+        }
+
+        /// <summary>
+        /// Elaborate Cloneable Object Usage
+        /// </summary>
+        private void ElaborateCloneableObjectUsage()
+        {
+            Console.WriteLine("=> Elaborate Cloneable Object Usage: ");
+
+            Console.WriteLine("Cloned p3 and stored new Point in p4");
+            ElaborateCloneablePoint p3 = new ElaborateCloneablePoint(100, 100, "Jane");
+            ElaborateCloneablePoint p4 = (ElaborateCloneablePoint)p3.Clone();
+            Console.WriteLine("Before modification:");
+            Console.WriteLine("p3: {0}", p3);
+            Console.WriteLine("p4: {0}", p4);
+            p4.desc.PetName = "My new Point";
+            p4.X = 9;
+            Console.WriteLine("\nChanged p4.desc.petName and p4.X");
+            Console.WriteLine("After modification:");
+            Console.WriteLine("p3: {0}", p3);
+            Console.WriteLine("p4: {0}", p4);
 
             Console.WriteLine();
         }
