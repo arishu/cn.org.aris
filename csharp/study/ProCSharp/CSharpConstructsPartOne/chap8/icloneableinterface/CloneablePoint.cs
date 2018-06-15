@@ -21,6 +21,6 @@ namespace CoreCSharpPrograming.chap8.icloneableinterface
         public override string ToString() => $"X = {X}; Y = {Y}";
 
         // Return a copy of the current object
-        public object Clone() => new Point(this.X, this.Y);
+        public object Clone() => new CloneablePoint(this.X, this.Y);
     }
 }

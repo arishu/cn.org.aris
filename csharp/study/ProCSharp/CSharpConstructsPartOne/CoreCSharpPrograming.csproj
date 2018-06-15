@@ -113,11 +113,17 @@
     <Compile Include="chap8\explicitinterfaceimplementation\IDrawToPrinter.cs" />
     <Compile Include="chap8\explicitinterfaceimplementation\OctagonWithExplicitBinding.cs" />
     <Compile Include="chap8\explicitinterfaceimplementation\OctagonWithSingleImplementationMethod.cs" />
+    <Compile Include="chap8\icloneableinterface\DeepCloneablePoint.cs" />
     <Compile Include="chap8\icloneableinterface\ElaborateCloneablePoint.cs" />
     <Compile Include="chap8\icloneableinterface\ICloneableInterfaceUsageExec.cs" />
     <Compile Include="chap8\icloneableinterface\CloneablePoint.cs" />
     <Compile Include="chap8\icloneableinterface\Point.cs" />
     <Compile Include="chap8\icloneableinterface\PointDescription.cs" />
+    <Compile Include="chap8\icomparableinterface\CustomPropertyAndSortTypesComparableCar.cs" />
+    <Compile Include="chap8\icomparableinterface\NormalCar.cs" />
+    <Compile Include="chap8\icomparableinterface\ComparableCar.cs" />
+    <Compile Include="chap8\icomparableinterface\IComparableInterfaceExec.cs" />
+    <Compile Include="chap8\icomparableinterface\PetNameComparer.cs" />
     <Compile Include="chap8\ienumerableandienumerator\Car.cs" />
     <Compile Include="chap8\ienumerableandienumerator\GarageForIteratorForLocalFunction.cs" />
     <Compile Include="chap8\ienumerableandienumerator\GarageForIteratorForLocalFunctionSecond.cs" />

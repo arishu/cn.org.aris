@@ -16,6 +16,8 @@ namespace CoreCSharpPrograming.chap8.icloneableinterface
                 ObjectCloneUsage();
 
                 ElaborateCloneableObjectUsage();
+
+                DeepObjectCopy();
             }
             catch (Exception e)
             {
@@ -74,8 +76,34 @@ namespace CoreCSharpPrograming.chap8.icloneableinterface
             Console.WriteLine("Before modification:");
             Console.WriteLine("p3: {0}", p3);
             Console.WriteLine("p4: {0}", p4);
+
             p4.desc.PetName = "My new Point";
             p4.X = 9;
+
+            Console.WriteLine("\nChanged p4.desc.petName and p4.X");
+            Console.WriteLine("After modification:");
+            Console.WriteLine("p3: {0}", p3);
+            Console.WriteLine("p4: {0}", p4);
+
+            Console.WriteLine();
+        }
+
+        /// <summary>
+        /// Deep Object Copy
+        /// </summary>
+        private void DeepObjectCopy()
+        {
+            Console.WriteLine("=> Deep Object Copy: ");
+
+            DeepCloneablePoint p3 = new DeepCloneablePoint(100, 100, "Jane");
+            DeepCloneablePoint p4 = (DeepCloneablePoint)p3.Clone();
+            Console.WriteLine("Before modification:");
+            Console.WriteLine("p3: {0}", p3);
+            Console.WriteLine("p4: {0}", p4);
+
+            p4.desc.PetName = "My new Point";
+            p4.X = 9;
+
             Console.WriteLine("\nChanged p4.desc.petName and p4.X");
             Console.WriteLine("After modification:");
             Console.WriteLine("p3: {0}", p3);

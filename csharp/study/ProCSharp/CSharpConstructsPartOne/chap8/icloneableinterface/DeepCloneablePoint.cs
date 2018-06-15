@@ -5,22 +5,22 @@ using System.Text;
 
 namespace CoreCSharpPrograming.chap8.icloneableinterface
 {
-    public class ElaborateCloneablePoint : ICloneable
+    public class DeepCloneablePoint : ICloneable
     {
         public int X { get; set; }
         public int Y { get; set; }
         public PointDescription desc = new PointDescription();
 
-        public ElaborateCloneablePoint() { }
+        public DeepCloneablePoint() { }
 
-        public ElaborateCloneablePoint(int xPos, int yPos, string petName)
+        public DeepCloneablePoint(int xPos, int yPos, string petName)
         {
             X = xPos;
             Y = yPos;
             desc.PetName = petName;
         }
 
-        public ElaborateCloneablePoint(int xPos, int yPos)
+        public DeepCloneablePoint(int xPos, int yPos)
         {
             X = xPos;
             Y = yPos;
@@ -31,6 +31,17 @@ namespace CoreCSharpPrograming.chap8.icloneableinterface
             => $"X = {X}; Y = {Y}; Name = {desc.PetName};\nID = {desc.PointID}\n";
 
         // Return a copy of the current object
-        public object Clone() => this.MemberwiseClone();
+        public object Clone()
+        {
+            // First get a shallow copy
+            DeepCloneablePoint newPoint = (DeepCloneablePoint)this.MemberwiseClone();
+
+            // Fill in the gaps
+            PointDescription currentDesc = new PointDescription();
+            currentDesc.PetName = this.desc.PetName;
+
+            newPoint.desc = currentDesc;
+            return newPoint;
+        }
     }
 }

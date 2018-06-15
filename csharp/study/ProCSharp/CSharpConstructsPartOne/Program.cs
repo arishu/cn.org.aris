@@ -6,6 +6,8 @@ using CoreCSharpPrograming.chap3.StringData;
 using CoreCSharpPrograming.chap5.CSharpEncapsulation;
 using CoreCSharpPrograming.chap7.unhandledexceptiondebugging;
 using CoreCSharpPrograming.chap8.ienumerableandienumerator;
+using CoreCSharpPrograming.chap8.icloneableinterface;
+using CoreCSharpPrograming.chap8.icomparableinterface;
 
 namespace CoreCSharpPrograming
 {
@@ -40,7 +42,11 @@ namespace CoreCSharpPrograming
 
         private static void Chap8Exec()
         {
-            new IEnumerableAndIEnumeratorInterfaceUsageExec().Exec();
+            // new IEnumerableAndIEnumeratorInterfaceUsageExec().Exec();
+
+            // new ICloneableInterfaceUsageExec().Exec();
+
+            new IComparableInterfaceExec().Exec();
         }
     }
 }
