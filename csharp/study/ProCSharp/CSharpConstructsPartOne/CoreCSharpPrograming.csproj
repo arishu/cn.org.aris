@@ -152,6 +152,8 @@
     <Compile Include="chap8\interfaceinheritance\Rectangle.cs" />
     <Compile Include="chap8\interfaceinheritance\Square.cs" />
     <Compile Include="chap8\invokeinterfacemembers\InvokeInterfaceMembersExec.cs" />
+    <Compile Include="chap9\AChap9ExecObject.cs" />
+    <Compile Include="chap9\motivationforcollectionclasses\MotivationForCollectionClassesExec.cs" />
     <Compile Include="IConsoleExecObject.cs" />
     <Compile Include="chap3\ImplicitlyTypedLocalVariable\ImplicitlyTypedLocalVariableExec.cs" />
     <Compile Include="chap3\IterationConstructs\IterationConstructsExec.cs" />

@@ -8,6 +8,7 @@ using CoreCSharpPrograming.chap7.unhandledexceptiondebugging;
 using CoreCSharpPrograming.chap8.ienumerableandienumerator;
 using CoreCSharpPrograming.chap8.icloneableinterface;
 using CoreCSharpPrograming.chap8.icomparableinterface;
+using CoreCSharpPrograming.chap9.motivationforcollectionclasses;
 
 namespace CoreCSharpPrograming
 {
@@ -21,8 +22,12 @@ namespace CoreCSharpPrograming
 
             // Chap7Exec();
 
-            Chap8Exec();
+            // Chap8Exec();
+
+            Chapt9Exec();
         }
+
+        
 
         private static void Chap3Exec()
         {
@@ -47,6 +52,13 @@ namespace CoreCSharpPrograming
             // new ICloneableInterfaceUsageExec().Exec();
 
             new IComparableInterfaceExec().Exec();
+        }
+
+
+        private static void Chapt9Exec()
+        {
+            new MotivationForCollectionClassesExec().Exec();
+
         }
     }
 }
