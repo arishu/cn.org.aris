@@ -13,8 +13,6 @@ namespace CoreCSharpPrograming.chap9.motivationforcollectionclasses
             try
             {
                 WorkingWithArrayList();
-
-
             }
             catch (Exception e)
             {
