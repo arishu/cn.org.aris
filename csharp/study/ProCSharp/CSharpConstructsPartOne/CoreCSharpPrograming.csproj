@@ -153,6 +153,11 @@
     <Compile Include="chap8\interfaceinheritance\Square.cs" />
     <Compile Include="chap8\invokeinterfacemembers\InvokeInterfaceMembersExec.cs" />
     <Compile Include="chap9\AChap9ExecObject.cs" />
+    <Compile Include="chap9\genericnamespace\GenericNamespaceExec.cs" />
+    <Compile Include="chap9\genericnamespace\Person.cs" />
+    <Compile Include="chap9\genericnamespace\Point.cs" />
+    <Compile Include="chap9\genericnamespace\PointColor.cs" />
+    <Compile Include="chap9\genericnamespace\Rectangle.cs" />
     <Compile Include="chap9\motivationforcollectionclasses\MotivationForCollectionClassesExec.cs" />
     <Compile Include="chap9\nongenericcollectionissues\Car.cs" />
     <Compile Include="chap9\nongenericcollectionissues\CarCollection.cs" />
