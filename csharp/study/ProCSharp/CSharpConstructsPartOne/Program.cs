@@ -9,6 +9,8 @@ using CoreCSharpPrograming.chap8.ienumerableandienumerator;
 using CoreCSharpPrograming.chap8.icloneableinterface;
 using CoreCSharpPrograming.chap8.icomparableinterface;
 using CoreCSharpPrograming.chap9.motivationforcollectionclasses;
+using CoreCSharpPrograming.chap9.nongenericcollectionissues;
+using CoreCSharpPrograming.chap9.genericnamespace;
 
 namespace CoreCSharpPrograming
 {
@@ -59,6 +61,9 @@ namespace CoreCSharpPrograming
         {
             new MotivationForCollectionClassesExec().Exec();
 
+            new NonGenericCollectionsIssuesExec().Exec();
+
+            new GenericNamespaceExec().Exec();
         }
     }
 }

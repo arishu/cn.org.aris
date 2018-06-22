@@ -19,6 +19,10 @@ namespace CoreCSharpPrograming.chap9.genericnamespace
                 UseGenericStack();
 
                 UseGenericQueue();
+
+                UseSortedSet();
+
+                UseDictionary();
             }
             catch (Exception e)
             {
@@ -193,6 +197,73 @@ namespace CoreCSharpPrograming.chap9.genericnamespace
             {
                 Console.WriteLine("Error! {0}", e.Message);
             }
+
+            Console.WriteLine();
+        }
+
+        /// <summary>
+        /// Use SortedSet
+        /// </summary>
+        private void UseSortedSet()
+        {
+            Console.WriteLine("=> Use SortedSet: ");
+
+            SortedSet<Person> setOfPeople = new SortedSet<Person>(new SortPeopleByAge())
+            {
+                new Person {FirstName= "Homer", LastName="Simpson", Age=47},
+                new Person {FirstName= "Marge", LastName="Simpson", Age=45},
+                new Person {FirstName= "Lisa", LastName="Simpson", Age=9},
+                new Person {FirstName= "Bart", LastName="Simpson", Age=8}
+            };
+
+            // Note the items are sorted by age
+            foreach (Person p in setOfPeople)
+            {
+                Console.WriteLine(p);
+            }
+            Console.WriteLine();
+
+            // Add a few new people, with various ages
+            setOfPeople.Add(new Person { FirstName = "Saku", LastName = "Jones", Age = 1 });
+            setOfPeople.Add(new Person { FirstName = "Mikko", LastName = "Jones", Age = 32 });
+
+            // Still sorted by age!
+            foreach (Person p in setOfPeople)
+            {
+                Console.WriteLine(p);
+            }
+
+            Console.WriteLine();
+        }
+
+        /// <summary>
+        /// Use Dictionary
+        /// </summary>
+        private void UseDictionary()
+        {
+            Console.WriteLine("=> Use Dictionary: ");
+
+            // Populate using Add() method
+            Dictionary<string, Person> peopleA = new Dictionary<string, Person>();
+            peopleA.Add("Homer", new Person { FirstName = "Homer", LastName = "Simpson", Age = 47 });
+            peopleA.Add("Marge", new Person { FirstName = "Marge", LastName = "Simpson", Age = 45 });
+            peopleA.Add("Lisa", new Person { FirstName = "Lisa", LastName = "Simpson", Age = 9 });
+
+            // Get Homer
+            Person homer = peopleA["Homer"];
+            Console.WriteLine(homer);
+
+            // Populate with initialization syntax
+            Dictionary<string, Person> peopleB = new Dictionary<string, Person>()
+            {
+                { "Homer", new Person { FirstName = "Homer", LastName = "Simpson", Age = 47 } },
+                { "Marge", new Person { FirstName = "Marge", LastName = "Simpson", Age = 45 } },
+                { "Lisa", new Person { FirstName = "Lisa", LastName = "Simpson", Age = 9 } }
+            };
+
+            // Get Lisa
+            Person Lisa = peopleB["Lisa"];
+            Console.WriteLine(Lisa);
 
             Console.WriteLine();
         }

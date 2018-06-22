@@ -158,6 +158,7 @@
     <Compile Include="chap9\genericnamespace\Point.cs" />
     <Compile Include="chap9\genericnamespace\PointColor.cs" />
     <Compile Include="chap9\genericnamespace\Rectangle.cs" />
+    <Compile Include="chap9\genericnamespace\SortPeopleByAge.cs" />
     <Compile Include="chap9\motivationforcollectionclasses\MotivationForCollectionClassesExec.cs" />
     <Compile Include="chap9\nongenericcollectionissues\Car.cs" />
     <Compile Include="chap9\nongenericcollectionissues\CarCollection.cs" />
