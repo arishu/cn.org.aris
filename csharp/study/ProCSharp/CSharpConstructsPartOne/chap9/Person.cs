@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CoreCSharpPrograming.chap9.nongenericcollectionissues
+namespace CoreCSharpPrograming.chap9
 {
     public class Person
     {

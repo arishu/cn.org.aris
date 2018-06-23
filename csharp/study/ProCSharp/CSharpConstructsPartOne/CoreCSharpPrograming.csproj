@@ -153,8 +153,10 @@
     <Compile Include="chap8\interfaceinheritance\Square.cs" />
     <Compile Include="chap8\invokeinterfacemembers\InvokeInterfaceMembersExec.cs" />
     <Compile Include="chap9\AChap9ExecObject.cs" />
+    <Compile Include="chap9\collectionsobjectmodel\CollectionsObjectModelExec.cs" />
+    <Compile Include="chap9\customgenericmethods\CustomGenericMethodExec.cs" />
     <Compile Include="chap9\genericnamespace\GenericNamespaceExec.cs" />
-    <Compile Include="chap9\genericnamespace\Person.cs" />
+    <Compile Include="chap9\Person.cs" />
     <Compile Include="chap9\genericnamespace\Point.cs" />
     <Compile Include="chap9\genericnamespace\PointColor.cs" />
     <Compile Include="chap9\genericnamespace\Rectangle.cs" />
@@ -164,7 +166,6 @@
     <Compile Include="chap9\nongenericcollectionissues\CarCollection.cs" />
     <Compile Include="chap9\nongenericcollectionissues\IntCollection.cs" />
     <Compile Include="chap9\nongenericcollectionissues\NonGenericCollectionsIssuesExec.cs" />
-    <Compile Include="chap9\nongenericcollectionissues\Person.cs" />
     <Compile Include="chap9\nongenericcollectionissues\PersonCollection.cs" />
     <Compile Include="IConsoleExecObject.cs" />
     <Compile Include="chap3\ImplicitlyTypedLocalVariable\ImplicitlyTypedLocalVariableExec.cs" />
@@ -178,6 +179,7 @@
   <ItemGroup>
     <Folder Include="chap3\Console\" />
     <Folder Include="chap3\DataTypesAndKeywords\" />
+    <Folder Include="chap9\customgenericstructuresandclasses\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="chap5\statickeywordusage\Readme.md" />
