@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="chap10\AChap10ExecObject.cs" />
+    <Compile Include="chap10\genericdelegate\GenericDelegateExecObject.cs" />
+    <Compile Include="chap10\sendingobjectstatenotifications\Car.cs" />
+    <Compile Include="chap10\sendingobjectstatenotifications\SendingObjectStateNotificationsExec.cs" />
+    <Compile Include="chap10\simpledelegate\SimpleDelegateExec.cs" />
     <Compile Include="chap3\AChap3ExecObject.cs" />
     <Compile Include="chap3\DataTypesNarrowingAndWidening\DataTypesNarrowingAndWideningExec.cs" />
     <Compile Include="chap3\DicisionConstructsAndRelationalEqualityOperators\DicisionConstructsAndRelationalEqualityOperatorsExec.cs" />

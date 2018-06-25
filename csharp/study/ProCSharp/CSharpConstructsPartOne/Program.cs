@@ -11,6 +11,8 @@ using CoreCSharpPrograming.chap8.icomparableinterface;
 using CoreCSharpPrograming.chap9.motivationforcollectionclasses;
 using CoreCSharpPrograming.chap9.nongenericcollectionissues;
 using CoreCSharpPrograming.chap9.genericnamespace;
+using CoreCSharpPrograming.chap10.simpledelegate;
+using CoreCSharpPrograming.chap10.sendingobjectstatenotifications;
 
 namespace CoreCSharpPrograming
 {
@@ -26,10 +28,10 @@ namespace CoreCSharpPrograming
 
             // Chap8Exec();
 
-            Chapt9Exec();
-        }
+            // Chap9Exec();
 
-        
+            Chap10Exec();
+        }
 
         private static void Chap3Exec()
         {
@@ -57,13 +59,20 @@ namespace CoreCSharpPrograming
         }
 
 
-        private static void Chapt9Exec()
+        private static void Chap9Exec()
         {
             new MotivationForCollectionClassesExec().Exec();
 
             new NonGenericCollectionsIssuesExec().Exec();
 
             new GenericNamespaceExec().Exec();
+        }
+
+        private static void Chap10Exec()
+        {
+            // new SimpleDelegateExec().Exec();
+
+            new SendingObjectStateNotificationsExec().Exec();
         }
     }
 }
