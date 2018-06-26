@@ -44,7 +44,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="chap10\AChap10ExecObject.cs" />
+    <Compile Include="chap10\anonymousmethods\CarEventArgs.cs" />
+    <Compile Include="chap10\anonymousmethods\CarWithEventArgs.cs" />
+    <Compile Include="chap10\anonymousmethods\AnonymousMethodUsageExecObject.cs" />
+    <Compile Include="chap10\eventkeyword\CarWithGenericEventHandler.cs" />
+    <Compile Include="chap10\eventkeyword\CarWithEventArgs.cs" />
+    <Compile Include="chap10\eventkeyword\Car.cs" />
+    <Compile Include="chap10\eventkeyword\CarEventArgs.cs" />
+    <Compile Include="chap10\eventkeyword\EventUsageExec.cs" />
     <Compile Include="chap10\genericdelegate\GenericDelegateExecObject.cs" />
+    <Compile Include="chap10\lambdaexpressions\LambdaExpressionsUsageExec.cs" />
     <Compile Include="chap10\sendingobjectstatenotifications\Car.cs" />
     <Compile Include="chap10\sendingobjectstatenotifications\SendingObjectStateNotificationsExec.cs" />
     <Compile Include="chap10\simpledelegate\SimpleDelegateExec.cs" />
