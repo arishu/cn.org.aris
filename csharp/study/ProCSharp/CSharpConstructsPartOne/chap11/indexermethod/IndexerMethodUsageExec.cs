@@ -121,5 +121,17 @@ namespace CoreCSharpPrograming.chap11.indexermethod
 
             Console.WriteLine();
         }
+
+        /// <summary>
+        /// Indexer Definition On Interface Type
+        /// </summary>
+        private void IndexerDefinitionOnInterfaceTypes()
+        {
+            Console.WriteLine("=> Indexer Definition On Interface Type: ");
+
+
+
+            Console.WriteLine();
+        }
     }
 }

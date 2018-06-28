@@ -13,6 +13,7 @@ using CoreCSharpPrograming.chap9.nongenericcollectionissues;
 using CoreCSharpPrograming.chap9.genericnamespace;
 using CoreCSharpPrograming.chap10.simpledelegate;
 using CoreCSharpPrograming.chap10.sendingobjectstatenotifications;
+using CoreCSharpPrograming.chap11.operatoroverloading;
 
 namespace CoreCSharpPrograming
 {
@@ -30,7 +31,9 @@ namespace CoreCSharpPrograming
 
             // Chap9Exec();
 
-            Chap10Exec();
+            // Chap10Exec();
+
+            Chap11Exec();
         }
 
         private static void Chap3Exec()
@@ -73,6 +76,11 @@ namespace CoreCSharpPrograming
             // new SimpleDelegateExec().Exec();
 
             new SendingObjectStateNotificationsExec().Exec();
+        }
+
+        private static void Chap11Exec()
+        {
+            new OperatorOverloadingUsageExec().Exec();
         }
     }
 }

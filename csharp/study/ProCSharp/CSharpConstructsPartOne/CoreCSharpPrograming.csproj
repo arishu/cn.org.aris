@@ -61,9 +61,14 @@
     <Compile Include="chap10\sendingobjectstatenotifications\SendingObjectStateNotificationsExec.cs" />
     <Compile Include="chap10\simpledelegate\SimpleDelegateExec.cs" />
     <Compile Include="chap11\AChap11ExecObject.cs" />
+    <Compile Include="chap11\customtypeconversion\CustomTypeConversionExec.cs" />
     <Compile Include="chap11\indexermethod\IndexerMethodUsageExec.cs" />
+    <Compile Include="chap11\indexermethod\IStringContainer.cs" />
+    <Compile Include="chap11\indexermethod\MyConsoleClass.cs" />
     <Compile Include="chap11\indexermethod\PersonDictionary.cs" />
     <Compile Include="chap11\indexermethod\PersonCollection.cs" />
+    <Compile Include="chap11\operatoroverloading\OperatorOverloadingUsageExec.cs" />
+    <Compile Include="chap11\operatoroverloading\Point.cs" />
     <Compile Include="chap11\Person.cs" />
     <Compile Include="chap3\AChap3ExecObject.cs" />
     <Compile Include="chap3\DataTypesNarrowingAndWidening\DataTypesNarrowingAndWideningExec.cs" />
