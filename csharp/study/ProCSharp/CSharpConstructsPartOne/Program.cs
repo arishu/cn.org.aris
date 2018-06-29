@@ -14,6 +14,8 @@ using CoreCSharpPrograming.chap9.genericnamespace;
 using CoreCSharpPrograming.chap10.simpledelegate;
 using CoreCSharpPrograming.chap10.sendingobjectstatenotifications;
 using CoreCSharpPrograming.chap11.operatoroverloading;
+using CoreCSharpPrograming.chap11.customtypeconversion;
+using CoreCSharpPrograming.chap11.extensionmethod;
 
 namespace CoreCSharpPrograming
 {
@@ -80,7 +82,11 @@ namespace CoreCSharpPrograming
 
         private static void Chap11Exec()
         {
-            new OperatorOverloadingUsageExec().Exec();
+            //  new OperatorOverloadingUsageExec().Exec();
+
+            // new CustomTypeConversionExec().Exec();
+
+            new ExtensionMethodExec().Exec();
         }
     }
 }

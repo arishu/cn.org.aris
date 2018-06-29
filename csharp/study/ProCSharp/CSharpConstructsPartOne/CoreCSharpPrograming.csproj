@@ -62,6 +62,10 @@
     <Compile Include="chap10\simpledelegate\SimpleDelegateExec.cs" />
     <Compile Include="chap11\AChap11ExecObject.cs" />
     <Compile Include="chap11\customtypeconversion\CustomTypeConversionExec.cs" />
+    <Compile Include="chap11\customtypeconversion\Rectangle.cs" />
+    <Compile Include="chap11\customtypeconversion\Square.cs" />
+    <Compile Include="chap11\extensionmethod\ExtensionMethodExec.cs" />
+    <Compile Include="chap11\extensionmethod\myextensionmethods\MyExtensions.cs" />
     <Compile Include="chap11\indexermethod\IndexerMethodUsageExec.cs" />
     <Compile Include="chap11\indexermethod\IStringContainer.cs" />
     <Compile Include="chap11\indexermethod\MyConsoleClass.cs" />
