@@ -16,6 +16,7 @@ using CoreCSharpPrograming.chap10.sendingobjectstatenotifications;
 using CoreCSharpPrograming.chap11.operatoroverloading;
 using CoreCSharpPrograming.chap11.customtypeconversion;
 using CoreCSharpPrograming.chap11.extensionmethod;
+using CoreCSharpPrograming.chap11.anonymoustypes;
 
 namespace CoreCSharpPrograming
 {
@@ -86,7 +87,9 @@ namespace CoreCSharpPrograming
 
             // new CustomTypeConversionExec().Exec();
 
-            new ExtensionMethodExec().Exec();
+            // new ExtensionMethodExec().Exec();
+
+            new AnonymousTypesExec().Exec();
         }
     }
 }

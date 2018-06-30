@@ -61,6 +61,7 @@
     <Compile Include="chap10\sendingobjectstatenotifications\SendingObjectStateNotificationsExec.cs" />
     <Compile Include="chap10\simpledelegate\SimpleDelegateExec.cs" />
     <Compile Include="chap11\AChap11ExecObject.cs" />
+    <Compile Include="chap11\anonymoustypes\AnonymousTypesExec.cs" />
     <Compile Include="chap11\customtypeconversion\CustomTypeConversionExec.cs" />
     <Compile Include="chap11\customtypeconversion\Rectangle.cs" />
     <Compile Include="chap11\customtypeconversion\Square.cs" />
