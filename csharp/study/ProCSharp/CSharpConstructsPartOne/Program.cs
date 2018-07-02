@@ -17,6 +17,7 @@ using CoreCSharpPrograming.chap11.operatoroverloading;
 using CoreCSharpPrograming.chap11.customtypeconversion;
 using CoreCSharpPrograming.chap11.extensionmethod;
 using CoreCSharpPrograming.chap11.anonymoustypes;
+using CoreCSharpPrograming.chap12.applylinqtoarrays;
 
 namespace CoreCSharpPrograming
 {
@@ -36,7 +37,9 @@ namespace CoreCSharpPrograming
 
             // Chap10Exec();
 
-            Chap11Exec();
+            // Chap11Exec();
+
+            Chap12Exec();
         }
 
         private static void Chap3Exec()
@@ -90,6 +93,11 @@ namespace CoreCSharpPrograming
             // new ExtensionMethodExec().Exec();
 
             new AnonymousTypesExec().Exec();
+        }
+
+        private static void Chap12Exec()
+        {
+            new ApplyLINQToArraysExec().Exec();
         }
     }
 }
