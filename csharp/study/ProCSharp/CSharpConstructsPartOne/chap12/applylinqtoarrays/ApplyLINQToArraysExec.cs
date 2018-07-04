@@ -193,7 +193,7 @@ namespace CoreCSharpPrograming.chap12.applylinqtoarrays
             Console.WriteLine();
         }
 
-        private LINQAndDeferredExecution()
+        private void LINQAndDeferredExecution()
         {
             Console.WriteLine();
 
