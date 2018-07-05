@@ -12,5 +12,8 @@
   <modules>
   	<module>common</module>
   	<module>log</module>
+  	
+  	
+  	<module>springinaction</module>
   </modules>
 </project>
