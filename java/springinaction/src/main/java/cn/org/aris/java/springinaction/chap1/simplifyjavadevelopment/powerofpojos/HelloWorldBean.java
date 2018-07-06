@@ -1,4 +1,4 @@
-package cn.org.aris.java.springinaction.chap1.simplifyjavadevelopment;
+package cn.org.aris.java.springinaction.chap1.simplifyjavadevelopment.powerofpojos;
 
 /**
  * A Simple POJO

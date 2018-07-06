@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/aop
+	http://www.springframework.org/schema/aop/spring-aop.xsd">
+	
+
+	<beans>
+		<bean id="knight" class="cn.org.aris.java.springinaction.chap1.simplifyjavadevelopment.aspectapplying.BraveKnight">
+			<constructor-arg ref="quest"/>				<!-- Inject quest bean -->
+			<constructor-arg ref="minstrel"/>
+		</bean>
+		
+		<!-- Create SlayDragonQuest -->
+		<bean id="quest" class="cn.org.aris.java.springinaction.chap1.simplifyjavadevelopment.dependencyinjection.SlayDragonQuest">
+			<constructor-arg value="#{T(System).out}"/>
+		</bean>
+		
+		<!-- Declare Minstrel bean -->
+		<bean id="minstrel" class="cn.org.aris.java.springinaction.chap1.simplifyjavadevelopment.aspectapplying.Minstrel">
+			<constructor-arg value="#{T(System).out}"/>
+		</bean>
+		
+		<aop:config>
+			<aop:aspect ref="minstrel">
+				<aop:pointcut id="embark" expression="execution(* *.embarkOnQuest(..))"/>
+				
+				<aop:before pointcut-ref="embark" method="singBeforeQuest"/>
+				
+				<aop:after pointcut-ref="embark" method="singAfterQuest"/>
+			</aop:aspect>
+		</aop:config>
+	</beans>	
+	
+</beans>
