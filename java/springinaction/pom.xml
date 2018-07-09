@@ -14,6 +14,7 @@
 		<aspectj-version>1.8.10</aspectj-version>
 		<junit-version>4.12</junit-version>
 		<mockito-version>2.13.0</mockito-version>
+		<system-rules-version>1.15.1</system-rules-version>
 	</properties>
 
 	<build>
@@ -105,6 +106,14 @@
 		    <version>${mockito-version}</version>
 		    <scope>test</scope>
 		</dependency>
+		
+		<dependency>
+		    <groupId>com.github.stefanbirkner</groupId>
+		    <artifactId>system-rules</artifactId>
+		    <version>${system-rules-version}</version>
+		    <scope>test</scope>
+		</dependency>
+		
 		
 	</dependencies>
 
