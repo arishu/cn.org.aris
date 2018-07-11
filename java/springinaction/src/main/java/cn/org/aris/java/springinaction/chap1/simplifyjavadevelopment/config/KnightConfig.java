@@ -11,7 +11,7 @@ import cn.org.aris.java.springinaction.chap1.simplifyjavadevelopment.dependencyi
 @Configuration
 public class KnightConfig {
 	
-	/*@Bean
+	@Bean
 	public Knight knight() {
 		return new BraveKnight(quest());
 	}
@@ -19,7 +19,7 @@ public class KnightConfig {
 	@Bean
 	private Quest quest() {
 		return new SlayDragonQuest(System.out);
-	}*/
+	}
 	
 	
 }

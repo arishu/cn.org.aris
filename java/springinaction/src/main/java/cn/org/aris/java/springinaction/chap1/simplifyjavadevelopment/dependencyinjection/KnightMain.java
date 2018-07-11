@@ -9,7 +9,7 @@ public class KnightMain {
 
 	public static void main(String[] args) throws QuestException {
 		// Loading Spring Application context
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("META-INF/spring/knight.xml");
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("META-INF/spring/chap1/knight.xml");
 		
 		// Get 'knight' bean from the Spring container
 		Knight knight = context.getBean(Knight.class);
