@@ -46,9 +46,24 @@ public class EnvironmentInjectionTest {
 	
 	public static class InjectFromPropertiesWithRequiredProperties {
 		
+		@SuppressWarnings("resource")
 		@Test(expected=BeanCreationException.class)
 		public void assertBlankDiscProperties() {
-			new AnnotationConfigApplicationContext();
+			new AnnotationConfigApplicationContext(EnvironmentConfigWithRequiredProperties.class);
+		}
+	}
+	
+	@RunWith(SpringJUnit4ClassRunner.class)
+	@ContextConfiguration("classpath:placeholder-config.xml")
+	public static class InjectFromProperties_XMLConfig {
+		
+		@Autowired
+		private BlankDisc blankDisc;
+		
+		@Test
+		public void assertBlankDiscProperties() {
+			assertEquals("The Beatles", blankDisc.getArtist());
+			assertEquals("Sgt. Peppers Lonely Hearts Club Band", blankDisc.getTitle());
 		}
 	}
 	
