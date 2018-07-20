@@ -15,6 +15,9 @@
 		<module>common</module>
 		<module>log</module>
 		<module>springinaction</module>
+		<module>aspectj</module>
+		<module>springaopexample</module>
+		<module>spittr</module>
 	</modules>
 
 	<!-- 添加Maven编译插件和默认使用的JDK版本 -->

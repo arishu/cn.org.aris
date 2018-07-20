@@ -10,11 +10,17 @@
  		http://www.springframework.org/schema/aop
 		http://www.springframework.org/schema/aop/spring-aop.xsd">
 		
-	<context:component-scan base-package="cn.org.aris.java.springinaction.chap4.creatingannotatedaspects.concert" />
-	
-	<aop:aspectj-autoproxy />
-	
-	<bean class="cn.org.aris.java.springinaction.chap4.creatingannotatedaspects.concert.Audience"></bean>
-	
-	<bean class="cn.org.aris.java.springinaction.chap4.creatingannotatedaspects.concert.EncoreableIntroducer"></bean>
+	<aop:config>
+		<aop:aspect ref="audience">
+		
+			<aop:pointcut 
+				id="performance"
+				expression="execution(** cn.org.aris.java.springinaction.chap4.creatingannotatedaspects.concert.Performance.perform(..))"/>
+		
+			<aop:around 
+				pointcut-ref="performance"
+				method="watchPerformance"/>
+		</aop:aspect>
+	</aop:config>
+
 </beans>

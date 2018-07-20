@@ -9,12 +9,21 @@
  		http://www.springframework.org/schema/beans/spring-beans.xsd
  		http://www.springframework.org/schema/aop
 		http://www.springframework.org/schema/aop/spring-aop.xsd">
-		
-	<context:component-scan base-package="cn.org.aris.java.springinaction.chap4.creatingannotatedaspects.concert" />
-	
-	<aop:aspectj-autoproxy />
-	
-	<bean class="cn.org.aris.java.springinaction.chap4.creatingannotatedaspects.concert.Audience"></bean>
-	
-	<bean class="cn.org.aris.java.springinaction.chap4.creatingannotatedaspects.concert.EncoreableIntroducer"></bean>
-</beans>
+
+	<aop:config>
+		<aop:aspect>
+			<!-- Define pointcut -->
+			<aop:pointcut
+				expression="execution(** cn.org.aris.java.springinaction.chap4.creatingannotatedaspects.concert.Performance.perform(..))"
+				id="performance" />
+
+			<!-- Reference pointcut via pointcut-ref attribute -->
+			<aop:before pointcut-ref="performance"
+				method="silenceCellPhones" />
+			<aop:before pointcut-ref="performance" method="takeSeats" />
+			<aop:after-returning pointcut-ref="performance" method="appclause" />
+			<aop:after-throwing pointcut-ref="performance" method="demandRefund" />
+		</aop:aspect>
+	</aop:config>
+
+</beans>		

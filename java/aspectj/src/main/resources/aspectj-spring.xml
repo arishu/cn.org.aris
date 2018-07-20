@@ -9,12 +9,22 @@
  		http://www.springframework.org/schema/beans/spring-beans.xsd
  		http://www.springframework.org/schema/aop
 		http://www.springframework.org/schema/aop/spring-aop.xsd">
-		
-	<context:component-scan base-package="cn.org.aris.java.springinaction.chap4.creatingannotatedaspects.concert" />
-	
-	<aop:aspectj-autoproxy />
-	
-	<bean class="cn.org.aris.java.springinaction.chap4.creatingannotatedaspects.concert.Audience"></bean>
-	
-	<bean class="cn.org.aris.java.springinaction.chap4.creatingannotatedaspects.concert.EncoreableIntroducer"></bean>
+
+	<bean id="criticismEngine"
+		class="cn.org.aris.java.aspectj.concert.CriticismEngineImpl">
+		<property name="criticisms">
+			<list>
+				<value>Worst performance ever!</value>
+				<value>I laughed, I cried, then I realized I was at the
+					wrong show.
+				</value>
+				<value>A must see show!</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean class="cn.org.aris.java.aspectj.concert.CriticAspect"
+		factory-method="aspectOf">
+		<property name="criticismEngine" ref="criticismEngine"></property>
+	</bean>
 </beans>

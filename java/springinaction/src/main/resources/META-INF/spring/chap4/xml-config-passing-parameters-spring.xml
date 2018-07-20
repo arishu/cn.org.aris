@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context.xsd
+ 		http://www.springframework.org/schema/beans 
+ 		http://www.springframework.org/schema/beans/spring-beans.xsd
+ 		http://www.springframework.org/schema/aop
+		http://www.springframework.org/schema/aop/spring-aop.xsd">
+		
+	<bean 
+		id="trackCounter" 
+		class="cn.org.aris.java.springinaction.chap4.creatingannotatedaspects.xml.soundsystem.TrackCounter"/>
+	
+	<bean 
+		id="cd"
+		class="cn.org.aris.java.springinaction.chap4.creatingannotatedaspects.soundsystem.BlankDisc">
+		
+		<property 
+			name="title" 
+			value="Sgt. Pepper's Lonely Hearts Club Band"/>
+			
+		<property 
+			name="artist" 
+			value="The Beatles"/>
+		
+		<property name="tacks">
+			<list>
+				<value>Sgt. Pepper's Lonely Hearts Club Band</value>
+				<value>With a Little Help from My Friends</value>
+				<value>Lucy in the Sky with Diamonds</value>
+				<value>Getting Better</value>
+				<value>Fixing a Hole</value>
+			</list>
+		</property>
+	</bean>
+	
+	<aop:config>
+		<aop:aspect ref="trackCounter">
+			<aop:pointcut 
+				expression="execution(* cn.org.aris.java.springinaction.chap4.creatingannotatedaspects.soundsystem.CompactDisc.playTrack(int)) and args(trackNumber)" 
+				id="trackPlayed"/>
+					
+			<aop:before 
+				pointcut-ref="trackPlayed"
+				method="countTrack"/>
+		</aop:aspect>
+	</aop:config>
+</beans>		
