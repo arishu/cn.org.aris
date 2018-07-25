@@ -6,19 +6,11 @@
 		<groupId>cn.org.aris</groupId>
 		<artifactId>main</artifactId>
 		<version>0.0.1</version>
+		<relativePath>..</relativePath>
 	</parent>
-	<groupId>cn.org.aris.java</groupId>
 	<artifactId>java</artifactId>
 	<packaging>pom</packaging>
 	<name>Java Projects</name>
-	<modules>
-		<module>common</module>
-		<module>log</module>
-		<module>springinaction</module>
-		<module>aspectj</module>
-		<module>springaopexample</module>
-		<module>spittr</module>
-	</modules>
 
 	<!-- 添加Maven编译插件和默认使用的JDK版本 -->
 	<build>

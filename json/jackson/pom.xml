@@ -4,6 +4,7 @@
     <groupId>cn.org.aris</groupId>
     <artifactId>json</artifactId>
     <version>0.0.1</version>
+    <relativePath>..</relativePath>
   </parent>
   <artifactId>jackson</artifactId>
   <packaging>pom</packaging>
@@ -57,4 +58,5 @@
   <modules>
   	<module>json-example</module>
   </modules>
+  <groupId>cn.org.aris.json</groupId>
 </project>
