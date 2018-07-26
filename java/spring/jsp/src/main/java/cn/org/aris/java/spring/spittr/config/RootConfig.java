@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.FilterType;
 
 @Configuration
-@ComponentScan(basePackages= {"cn.org.aris.java.spittr"},
+@ComponentScan(basePackages= {"cn.org.aris.java.spring.spittr"},
 		excludeFilters= {
 				@Filter(type=FilterType.ANNOTATION, value=EnableWebMvc.class)
 		})

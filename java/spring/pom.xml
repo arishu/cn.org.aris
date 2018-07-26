@@ -15,6 +15,9 @@
 	<properties>
 		<springframework.version>4.3.18.RELEASE</springframework.version>
 
+		<!-- Log dependencies -->
+		<slf4j-log4j12.version>1.7.25</slf4j-log4j12.version>
+
 		<!-- Test dependencies -->
 		<junit.version>4.12</junit.version>
 		<mockito.version>2.13.0</mockito.version>
@@ -61,6 +64,14 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
 			<version>${springframework.version}</version>
+		</dependency>
+	
+		<!-- Log -->
+		<dependency>
+		    <groupId>org.slf4j</groupId>
+		    <artifactId>slf4j-log4j12</artifactId>
+		    <version>${slf4j-log4j12.version}</version>
+		    <scope>test</scope>
 		</dependency>
 	
 		<!-- Apache Commons -->
