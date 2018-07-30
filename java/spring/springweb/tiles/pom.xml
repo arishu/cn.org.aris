@@ -7,7 +7,7 @@
 		<artifactId>springweb</artifactId>
 		<version>0.0.1</version>
 	</parent>
-  <artifactId>tiles</artifactId>
+	<artifactId>tiles</artifactId>
 	<packaging>war</packaging>
 
 	<properties>
@@ -15,13 +15,13 @@
 		<tiles-servlet.version>3.0.5</tiles-servlet.version>
 		<!-- Using JSTL -->
 		<jstl-api.version>1.2.1</jstl-api.version>
-		
+
 		<!-- Using Taglibs -->
 		<taglibs-standard.version>1.1.2</taglibs-standard.version>
 	</properties>
 
 	<dependencies>
-	
+
 		<!-- Tiles Dependencies -->
 		<dependency>
 			<groupId>org.apache.tiles</groupId>
@@ -33,19 +33,19 @@
 			<artifactId>tiles-servlet</artifactId>
 			<version>${tiles-servlet.version}</version>
 		</dependency>
-		
+
 		<!-- JSTL dependency -->
 		<dependency>
 			<groupId>javax.servlet.jsp.jstl</groupId>
 			<artifactId>javax.servlet.jsp.jstl-api</artifactId>
 			<version>${jstl-api.version}</version>
 		</dependency>
-		
+
 		<!-- Taglibs dependency -->
 		<dependency>
-		    <groupId>taglibs</groupId>
-		    <artifactId>standard</artifactId>
-		    <version>${taglibs-standard.version}</version>
+			<groupId>taglibs</groupId>
+			<artifactId>standard</artifactId>
+			<version>${taglibs-standard.version}</version>
 		</dependency>
 	</dependencies>
 </project>
