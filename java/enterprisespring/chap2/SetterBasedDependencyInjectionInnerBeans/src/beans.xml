@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="atmBean" class="cn.org.aris.java.enterprisespring.chap2.setterinjection.innerbeans.ATM">
+		<property name="printer">
+			<bean class="cn.org.aris.java.enterprisespring.chap2.setterinjection.innerbeans.Printer">
+				<property name="message" value="The balance information is printed by Printer for the account number"></property>
+			</bean>
+		</property>
+	</bean>
+
+</beans>

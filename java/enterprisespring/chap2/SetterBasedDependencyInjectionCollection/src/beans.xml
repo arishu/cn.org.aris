@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="employee" class="cn.org.aris.java.enterprisespring.chap2.setterinjection.Employee">
+		
+		<!-- Inject a list -->
+		<property name="lists">
+			<list>
+				<value>Ravi Kant Soni</value>
+				<value>Shashi Kant Soni</value>
+				<value>Shree Kant Soni</value>
+			</list>
+		</property>
+		
+		<!-- Inject a set -->
+		<property name="sets">
+			<set>
+				<value>Namrata Soni</value>
+				<value>Rishi Raj Soni</value>
+			</set>
+		</property>
+		
+		<!-- Inject a map -->
+		<property name="maps">
+			<map>
+				<entry key="Key 1" value="Sasaram"></entry>
+				<entry key="Key 2" value="Bihar"></entry>
+			</map>
+		</property>
+	</bean>
+
+</beans>

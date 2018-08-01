@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	
+	<bean id="employeeBean" class="cn.org.aris.java.enterprisespring.chap2.setterinjection.conplexjavatype.Employee">
+		<property name="employeeName" value="Aris Hu"></property>
+	</bean>
+
+	<bean id="employeeServiceBean" class="cn.org.aris.java.enterprisespring.chap2.setterinjection.conplexjavatype.EmployeeService">
+		<property name="employee" ref="employeeBean"></property>
+	</bean>
+</beans>
