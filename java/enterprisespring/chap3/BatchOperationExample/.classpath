@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="libs/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="libs/derby.jar"/>
+	<classpathentry kind="lib" path="libs/derbyclient.jar"/>
+	<classpathentry kind="lib" path="libs/derbyLocale_cs.jar"/>
+	<classpathentry kind="lib" path="libs/derbyLocale_de_DE.jar"/>
+	<classpathentry kind="lib" path="libs/derbyLocale_es.jar"/>
+	<classpathentry kind="lib" path="libs/derbyLocale_fr.jar"/>
+	<classpathentry kind="lib" path="libs/derbyLocale_hu.jar"/>
+	<classpathentry kind="lib" path="libs/derbyLocale_it.jar"/>
+	<classpathentry kind="lib" path="libs/derbyLocale_ja_JP.jar"/>
+	<classpathentry kind="lib" path="libs/derbyLocale_ko_KR.jar"/>
+	<classpathentry kind="lib" path="libs/derbyLocale_pl.jar"/>
+	<classpathentry kind="lib" path="libs/derbyLocale_pt_BR.jar"/>
+	<classpathentry kind="lib" path="libs/derbyLocale_ru.jar"/>
+	<classpathentry kind="lib" path="libs/derbyLocale_zh_CN.jar"/>
+	<classpathentry kind="lib" path="libs/derbyLocale_zh_TW.jar"/>
+	<classpathentry kind="lib" path="libs/spring-aop-4.3.18.RELEASE.jar"/>
+	<classpathentry kind="lib" path="libs/spring-aspects-4.3.18.RELEASE.jar"/>
+	<classpathentry kind="lib" path="libs/spring-beans-4.3.18.RELEASE.jar"/>
+	<classpathentry kind="lib" path="libs/spring-context-4.3.18.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="libs/spring-context-4.3.18.RELEASE.jar"/>
+	<classpathentry kind="lib" path="libs/spring-context-support-4.3.18.RELEASE.jar"/>
+	<classpathentry kind="lib" path="libs/spring-core-4.3.18.RELEASE.jar"/>
+	<classpathentry kind="lib" path="libs/spring-expression-4.3.18.RELEASE.jar"/>
+	<classpathentry kind="lib" path="libs/spring-jdbc-4.3.18.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="libs/spring-jdbc-4.3.18.RELEASE.jar"/>
+	<classpathentry kind="lib" path="libs/spring-orm-4.3.18.RELEASE.jar"/>
+	<classpathentry kind="lib" path="libs/spring-tx-4.3.18.RELEASE.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -20,6 +20,27 @@ public class EmployeeDaoImpl implements EmployeeDao {
 	private DataSource dataSource;
 	
 	@Override
+	public void deleteEmployee() {
+		Connection conn = null;
+		
+		try {
+			conn = dataSource.getConnection();
+			Statement stmt = conn.createStatement();
+			stmt.execute("drop table employee");
+			stmt.close();
+		} catch (SQLException e) {
+			throw new RuntimeException(e);
+		} finally {
+			if (conn != null) {
+				try {
+					conn.close();
+				} catch (SQLException e) {
+				}
+			}
+		}
+	}
+	
+	@Override
 	public Employee getEmployeeById(int id) {
 		Connection conn = null;
 		Employee employee = null;
@@ -129,4 +150,6 @@ public class EmployeeDaoImpl implements EmployeeDao {
 			}
 		}
 	}
+
+	
 }
