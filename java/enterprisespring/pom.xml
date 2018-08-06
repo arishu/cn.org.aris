@@ -14,6 +14,9 @@
 		<module>chap4/HibernateQueryLanguageDemo</module>
 		
 		<module>chap4/HibernateUsingCriterianApi</module>
+		
+		<module>chap5/SpringSecurityExample</module>
+		<module>chap5/ehrPayrollWithSecurity</module>
 	</modules>
 
 	<properties>
