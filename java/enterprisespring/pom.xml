@@ -17,6 +17,10 @@
 		
 		<module>chap5/SpringSecurityExample</module>
 		<module>chap5/ehrPayrollWithSecurity</module>
+		<module>chap6/JUnitTesting</module>
+		<module>chap6/TestNGTesing</module>
+		<module>chap6/UnitTestingWithMockito</module>
+		<module>chap6/IsolatedClassUnitTesting</module>
 	</modules>
 
 	<properties>
@@ -36,11 +40,6 @@
 	<dependencies>
 
 		<!-- Spring Core -->
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-beans</artifactId>
-			<version>${springframework.version}</version>
-		</dependency>
 
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -52,6 +51,12 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 			<version>${springframework.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework</groupId>
+					<artifactId>spring-beans</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<dependency>
@@ -64,6 +69,12 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context-support</artifactId>
 			<version>${springframework.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework</groupId>
+					<artifactId>spring-beans</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<!-- Spring Test -->

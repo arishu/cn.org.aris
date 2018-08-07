@@ -8,25 +8,63 @@
 		http://www.springframework.org/schema/security 
 		http://www.springframework.org/schema/security/spring-security.xsd">
 	
-	<http auto-config="true">
-		<csrf disabled="true"/>
 	
+	<!-- <http>
+		<csrf disabled="true"/>
+		Adds Support for basic authentication
+		<http-basic/>
 		<intercept-url pattern="/employee/*" access="hasRole('ROLE_ADMIN')"/>
-		
+		<logout logout-url="/logout" logout-success-url="/logoutPage"/>
+	</http> -->
+	
+	<!-- <http auto-config="true">
+		<csrf disabled="true"/>
+		<intercept-url pattern="/employee/*" access="hasRole('ROLE_ADMIN')"/>
 		<form-login login-processing-url="/login" 
 			login-page="/loginPage"
 			username-parameter="username"
 			password-parameter="password"
 			default-target-url="/employee/listemployee"
 			authentication-failure-url="/loginPage?auth=fail"/>
-			
+		<logout logout-url="/logout" logout-success-url="/logoutPage"/>
+	</http> -->
+
+	<!-- <http>
+		<csrf disabled="true"/>
+		<anonymous username="guest" granted-authority="ROLE_ANONYMOUS"/>
+		<intercept-url pattern="/employee/deleteemployee" access="hasRole('ROLE_ADMIN')"/>
+		<intercept-url pattern="/employee/listemployee" access="hasAnyRole('ROLE_USER', 'ROLE_ADMIN')"/>
+		<intercept-url pattern="/employee/addemployee" access="hasRole('ROLE_USER')"/>
+		<form-login login-processing-url="/login" 
+			login-page="/loginPage"
+			username-parameter="username"
+			password-parameter="password"
+			default-target-url="/employee/listemployee"
+			authentication-failure-url="/loginPage?auth=fail"/>
+		<logout logout-url="/logout" logout-success-url="/logoutPage"/>
+	</http> -->
+	
+	<http>
+		<csrf disabled="true"/>
+		<anonymous username="guest" granted-authority="ROLE_ANONYMOUS"/>
+		<intercept-url pattern="/employee/deleteemployee" access="hasRole('ROLE_ADMIN')"/>
+		<intercept-url pattern="/employee/listemployee" access="hasAnyRole('ROLE_USER', 'ROLE_ADMIN')"/>
+		<intercept-url pattern="/employee/addemployee" access="hasRole('ROLE_USER')"/>
+		<remember-me/>
+		<form-login login-processing-url="/login" 
+			login-page="/loginPage"
+			username-parameter="username"
+			password-parameter="password"
+			default-target-url="/employee/listemployee"
+			authentication-failure-url="/loginPage?auth=fail"/>
 		<logout logout-url="/logout" logout-success-url="/logoutPage"/>
 	</http>
 
 	<authentication-manager>
 		<authentication-provider>
 			<user-service>
-				<user name="sa" password="mingyi" authorities="ROLE_ADMIN"/>
+				<user name="admin" password="admin123" authorities="ROLE_ADMIN"/>
+				<user name="sa" password="mingyi" authorities="ROLE_USER"/>
 			</user-service>
 		</authentication-provider>
 	</authentication-manager>
