@@ -34,11 +34,14 @@ public class EmployeeServiceTest {
 	
 	@Test
 	public void findEmployeeTest() {
+		// Use Stub method to check whether the dao method returns the correct value
 		when(employeeDao.findEmployee(OLD_EMPLOYEE_ID)).thenReturn(oldEmployee);
+		
+		// Check whether the service method return the expected value
 		Employee employee = employeeService.findEmployee(OLD_EMPLOYEE_ID);
 		assertEquals(oldEmployee, employee);
 		
-		// Verifies findEmployee behavior happendd once
+		// Verifies findEmployee behavior happened once
 		verify(employeeDao).findEmployee(OLD_EMPLOYEE_ID);
 				
 		// Verifies that during the test, 
