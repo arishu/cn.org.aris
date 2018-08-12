@@ -125,5 +125,8 @@
 		<module>chap2/webstore</module>
 		<module>chap3/webstore</module>
 		<module>chap4/webstore</module>
+		<module>chap5/redirectview</module>
+		<module>chap5/staticresources</module>
+		<module>chap5/multirequest</module>
 	</modules>
 </project>

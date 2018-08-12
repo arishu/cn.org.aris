@@ -1,0 +1,27 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>cn.org.aris</groupId>
+		<artifactId>springmvc</artifactId>
+		<version>0.0.1</version>
+		<relativePath>../..</relativePath>
+	</parent>
+	<groupId>cn.org.aris.java.springmvc.chap5</groupId>
+	<artifactId>multirequest</artifactId>
+	<packaging>war</packaging>
+
+	<properties>
+		<commons-fileupload.version>1.3.1</commons-fileupload.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.3.1</version>
+		</dependency>
+	</dependencies>
+
+</project>
