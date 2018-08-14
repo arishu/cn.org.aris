@@ -55,6 +55,19 @@
 			<version>${spring-framework.version}</version>
 			<scope>compile</scope>
 		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring-framework.version}</version>
+			<exclusions>
+				<!-- Exclude Commons Logging in favor of SLF4j -->
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				 </exclusion>
+			</exclusions>
+		</dependency>
 
 		<!-- JSTL -->
 		<dependency>
@@ -128,5 +141,13 @@
 		<module>chap5/redirectview</module>
 		<module>chap5/staticresources</module>
 		<module>chap5/multirequest</module>
+		<module>chap5/contentnegotiation</module>
+		<module>chap5/handlerexception</module>
+		<module>chap6/interceptorsexample</module>
+		<module>springmvc/chap6/localeinterceptor</module>
+		<module>chap6/mappedinterceptor</module>
+		<module>chap7/springsecuritybasic</module>
+		<module>chap8/beanvalidataion</module>
+		<module>chap8/customvalidation</module>
 	</modules>
 </project>
